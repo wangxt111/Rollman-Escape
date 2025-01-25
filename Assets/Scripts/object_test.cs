@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class object_test : MonoBehaviour
@@ -8,6 +9,11 @@ public class object_test : MonoBehaviour
     // 开始方法
     private void OnMouseDown()
     {
-        Debug.Log("鼠标按下");
+        GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
+        if (freebutton != null){
+            freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
+            freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
+            this.gameObject.SetActive(false);
+        }
     }
 }
