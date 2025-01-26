@@ -16,6 +16,7 @@ public class SceneSwitcher_start : MonoBehaviour
     public void SwitchScene()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene("TableBar");
         SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
     }
 }

@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Wall4
-  currentWallScene: Wall1
+  CurrentWallScene: Wall1
 --- !u!114 &375574934
 MonoBehaviour:
   m_ObjectHideFlags: 0
