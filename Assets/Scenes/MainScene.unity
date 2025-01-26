@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 61133455}
   m_Layer: 5
   m_Name: Button (13)
-  m_TagString: button3
+  m_TagString: button13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
