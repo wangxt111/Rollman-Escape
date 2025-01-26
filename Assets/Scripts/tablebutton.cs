@@ -13,7 +13,6 @@ public class tablebutton : MonoBehaviour
     Button button;
     void Start()
     {
-        DontDestroyOnLoad(storeobject);
         changetext(this.gameObject, buttonID.ToString());
         button = GetComponent<Button>();
         button.onClick.AddListener(TaskOnClick);

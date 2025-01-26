@@ -3,16 +3,32 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class object_test : MonoBehaviour
+public class Obj : MonoBehaviour
 {
+    public int scene_num;
+    private Vector3 initialPosition;
+    
     // Start is called before the first frame update
     // 开始方法
-    void Start(){
+    void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+        initialPosition = transform.position;
         return;
     }
-    void Update(){
-        return;
+    void Update()
+    {
+        if (scene_num == info.current_scene_num)
+        {
+            transform.position = initialPosition;
+        }
+        else
+        {
+            // 把物体移到一个很远的地方
+            transform.position = new Vector3(-1000f, -1000f, -1000f);
+        }
     }
+
     private void OnMouseDown()
     {
         GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
