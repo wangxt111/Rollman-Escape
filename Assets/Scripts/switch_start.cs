@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 
-public class SceneSwitcher : MonoBehaviour
+public class SceneSwitcher_start : MonoBehaviour
 {
     Button button;
     public string SceneName;
-    public string CurrentWallScene;
+
     void Start()
     {
         button = GetComponent<Button>();
@@ -15,7 +15,7 @@ public class SceneSwitcher : MonoBehaviour
     }
     public void SwitchScene()
     {
-        SceneManager.UnloadSceneAsync(CurrentWallScene);
+        Destroy(gameObject);
         SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
     }
 }
