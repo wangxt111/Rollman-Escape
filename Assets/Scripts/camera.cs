@@ -11,7 +11,7 @@ public class CameraRoomController : MonoBehaviour
     {
         if( Input.GetKeyDown(KeyCode.UpArrow) )
         {
-            transform.rotation = Quaternion.Euler(90f,0f,0f) ;
+            transform.rotation = Quaternion.Euler(-90f,0f,0f) ;
             info.current_scene_num = 5 ;
         }
         else if( Input.GetKeyDown(KeyCode.DownArrow) && info.current_scene_num == 5 )
