@@ -36,7 +36,6 @@ public class tablebutton : MonoBehaviour
     {
         // Button被点击时执行的操作
         if(info.currentobject != null && storeobject == null){
-            Debug.Log(""+info.currentindex+" "+buttonID);
             storeobject = info.currentobject;
             changetext(GameObject.FindGameObjectWithTag("button"+info.currentindex), info.currentindex.ToString());
             changestore(GameObject.FindGameObjectWithTag("button"+info.currentindex), null);
