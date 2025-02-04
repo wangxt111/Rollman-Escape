@@ -11,4 +11,5 @@ public static class info{
     
     public static int current_scene_num = 1 ;
 
+    public static bool in_childscene = false; //在子场景中无法转动摄像头
 }

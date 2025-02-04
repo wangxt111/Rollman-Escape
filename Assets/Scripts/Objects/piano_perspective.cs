@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class piano_perspective : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    // 开始方法
+    Vector3 CameraPositionAfterClick = new Vector3(0, 0, 80);
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -35,18 +33,10 @@ public class piano_perspective : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 Debug.Log("击中钢琴");
-                // GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
-                // if (freebutton != null)
-                // {
-                //     Debug.Log("id" + freebutton.GetComponent<tablebutton>().buttonID);
-                //     freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
-                //     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
-                //     this.gameObject.SetActive(false);
-                // }
+                Utils.MoveCamera(CameraPositionAfterClick);
             }
             else
             {
-                // 可选：调试信息，帮助理解为什么没有击中预期的对象
                 Debug.Log("射线击中的对象：" + hit.collider?.name);
             }
         }
