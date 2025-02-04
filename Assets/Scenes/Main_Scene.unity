@@ -132,8 +132,10 @@ GameObject:
   m_Component:
   - component: {fileID: 99607296}
   - component: {fileID: 99607297}
+  - component: {fileID: 99607298}
+  - component: {fileID: 99607299}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (2)"
+  m_Name: keyboard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,6 +208,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &99607298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99607295}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: -4, y: 0.85, z: 0}
+--- !u!114 &99607299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99607295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 3
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: a0a35ddc539fbf44b8dab1ab501f548c, type: 3}
+  switchDuration: 0.5
 --- !u!1 &124509905
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,8 +360,10 @@ GameObject:
   m_Component:
   - component: {fileID: 130753826}
   - component: {fileID: 130753827}
+  - component: {fileID: 130753828}
+  - component: {fileID: 130753829}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (5)"
+  m_Name: keyboard10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,6 +436,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &130753828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130753825}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: 2.1, y: 0.85, z: 0}
+--- !u!114 &130753829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130753825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 10
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 53a2e97ad7d61374094459631322c5d4, type: 3}
+  switchDuration: 0.5
 --- !u!1 &132380874
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_num: 1
 --- !u!212 &395370084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -818,8 +895,10 @@ GameObject:
   m_Component:
   - component: {fileID: 408044927}
   - component: {fileID: 408044928}
+  - component: {fileID: 408044930}
+  - component: {fileID: 408044929}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (9)"
+  m_Name: keyboard14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,6 +971,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &408044929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408044926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 14
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: b18e6f22c194c6b438a92a59448e1239, type: 3}
+  switchDuration: 0.5
+--- !u!65 &408044930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408044926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: 5.6, y: -0.5, z: 0}
 --- !u!1 &538130632
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,8 +1018,10 @@ GameObject:
   m_Component:
   - component: {fileID: 538130633}
   - component: {fileID: 538130634}
+  - component: {fileID: 538130635}
+  - component: {fileID: 538130636}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (4)"
+  m_Name: keyboard8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,6 +1094,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &538130635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538130632}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: 0.5, y: 0.85, z: 0}
+--- !u!114 &538130636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538130632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 8
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 84d51b723e27a3843a19a5f2cb45c28b, type: 3}
+  switchDuration: 0.5
 --- !u!1 &552168757
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,8 +1141,10 @@ GameObject:
   m_Component:
   - component: {fileID: 552168758}
   - component: {fileID: 552168759}
+  - component: {fileID: 552168761}
+  - component: {fileID: 552168760}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (4)"
+  m_Name: keyboard6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,6 +1217,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &552168760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552168757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 6
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 8d9ed2153eaabc04a8da65caf59615bd, type: 3}
+  switchDuration: 0.5
+--- !u!65 &552168761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552168757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: -1.4, y: -0.5, z: 0}
 --- !u!1 &644697278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,8 +1264,10 @@ GameObject:
   m_Component:
   - component: {fileID: 644697279}
   - component: {fileID: 644697280}
+  - component: {fileID: 644697282}
+  - component: {fileID: 644697281}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (5)"
+  m_Name: keyboard7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1144,6 +1340,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &644697281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644697278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 7
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: a8597efdfb1b8554dbc36d85c42df436, type: 3}
+  switchDuration: 0.5
+--- !u!65 &644697282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644697278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: -0.4, y: -0.5, z: 0}
 --- !u!1 &694941900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,8 +1493,10 @@ GameObject:
   m_Component:
   - component: {fileID: 740197879}
   - component: {fileID: 740197880}
+  - component: {fileID: 740197882}
+  - component: {fileID: 740197881}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (6)"
+  m_Name: keyboard9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1334,6 +1569,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &740197881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740197878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 9
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 5cb520334271b924c893c636a7907b0d, type: 3}
+  switchDuration: 0.5
+--- !u!65 &740197882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740197878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7, y: 7, z: 0}
+  m_Center: {x: 1.305, y: -0.5, z: 0}
 --- !u!1 &749260617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,8 +1616,10 @@ GameObject:
   m_Component:
   - component: {fileID: 749260618}
   - component: {fileID: 749260619}
+  - component: {fileID: 749260620}
+  - component: {fileID: 749260621}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (7)"
+  m_Name: keyboard15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1418,6 +1692,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &749260620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749260617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: 6.5, y: 0.85, z: 0}
+--- !u!114 &749260621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749260617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 15
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 7a6b3b7ae4d5077408bb530c5a723a51, type: 3}
+  switchDuration: 0.5
 --- !u!1 &806489368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_num: 1
 --- !u!212 &806489371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1549,8 +1859,10 @@ GameObject:
   m_Component:
   - component: {fileID: 865109696}
   - component: {fileID: 865109697}
+  - component: {fileID: 865109698}
+  - component: {fileID: 865109699}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (2)"
+  m_Name: keyboard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,6 +1935,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &865109698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865109695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: -4.9, y: -0.5, z: 0}
+--- !u!114 &865109699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865109695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 2
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: b175fc753be4a24449401d03a0fc9617, type: 3}
+  switchDuration: 0.5
 --- !u!1 &866631279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,7 +2003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_num: 1
 --- !u!212 &866631282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1873,8 +2221,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1072378492}
   - component: {fileID: 1072378493}
+  - component: {fileID: 1072378495}
+  - component: {fileID: 1072378494}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (1)"
+  m_Name: keyboard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,6 +2297,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1072378494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072378491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 1
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 5155d85dd2e9165418917e2f32c1496c, type: 3}
+  switchDuration: 0.5
+--- !u!65 &1072378495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072378491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: -5.85, y: -0.5, z: 0}
 --- !u!1 &1137935323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_num: 1
 --- !u!212 &1141811513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2205,7 +2591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_num: 1
 --- !u!212 &1234608758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2305,8 +2690,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1244358917}
   - component: {fileID: 1244358918}
+  - component: {fileID: 1244358919}
+  - component: {fileID: 1244358920}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (3)"
+  m_Name: keyboard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2379,6 +2766,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1244358919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244358916}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: -2.25, y: 0.85, z: 0}
+--- !u!114 &1244358920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244358916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 5
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: e8970bcd56e24924d8183f69c4305c1c, type: 3}
+  switchDuration: 0.5
 --- !u!1 &1333342049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,8 +2813,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1333342050}
   - component: {fileID: 1333342051}
+  - component: {fileID: 1333342053}
+  - component: {fileID: 1333342052}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (8)"
+  m_Name: keyboard13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,6 +2889,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1333342052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333342049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 13
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 7eca86ba124bdad4bbcad0f0aa1c1f7a, type: 3}
+  switchDuration: 0.5
+--- !u!65 &1333342053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333342049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 7, z: 0}
+  m_Center: {x: 4.6, y: -0.5, z: 0}
 --- !u!1 &1396947111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,8 +3042,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1510121768}
   - component: {fileID: 1510121769}
+  - component: {fileID: 1510121770}
+  - component: {fileID: 1510121771}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (6)"
+  m_Name: keyboard12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2653,6 +3118,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1510121770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510121767}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: 3.7, y: 0.85, z: 0}
+--- !u!114 &1510121771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510121767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 12
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 381680e7e3e9ba5488df0c4dba081d2b, type: 3}
+  switchDuration: 0.5
 --- !u!1 &1540566350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,8 +3165,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1540566351}
   - component: {fileID: 1540566352}
+  - component: {fileID: 1540566354}
+  - component: {fileID: 1540566353}
   m_Layer: 0
-  m_Name: "\u9ED1\u8272\u7434\u952E \u672A\u6309\u4E0B (1)"
+  m_Name: keyboard0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2737,6 +3241,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1540566353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540566350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 0
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 1bfa1101794bc924c8430d6f43f8b8f1, type: 3}
+  switchDuration: 0.5
+--- !u!65 &1540566354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540566350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9, y: 4.5, z: 0}
+  m_Center: {x: -6.8, y: 0.85, z: 0}
 --- !u!1 &1803128595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,8 +3288,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1803128596}
   - component: {fileID: 1803128597}
+  - component: {fileID: 1803128598}
+  - component: {fileID: 1803128599}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (3)"
+  m_Name: keyboard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2821,6 +3364,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1803128598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803128595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8, y: 7, z: 0}
+  m_Center: {x: -3.105, y: -0.5, z: 0}
+--- !u!114 &1803128599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803128595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 4
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: ff5541c3e6f152147bca2e457ae71023, type: 3}
+  switchDuration: 0.5
 --- !u!1 &1876961861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2937,8 +3517,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1941380503}
   - component: {fileID: 1941380504}
+  - component: {fileID: 1941380506}
+  - component: {fileID: 1941380505}
   m_Layer: 0
-  m_Name: "\u767D\u8272\u7434\u952E \u672A\u6309\u4E0B (7)"
+  m_Name: keyboard11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3011,6 +3593,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1941380505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941380502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42d60ba8afde4184d7d4d3fa75346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyboardID: 11
+  isfinished: 1
+  newSprite: {fileID: 21300000, guid: 30ed0ee0d40bc38428bccb4601ebacbd, type: 3}
+  switchDuration: 0.5
+--- !u!65 &1941380506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941380502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.73, y: 7, z: 0}
+  m_Center: {x: 2.9, y: -0.5, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

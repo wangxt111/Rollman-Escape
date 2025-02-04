@@ -5,13 +5,8 @@ using UnityEngine;
 
 public class Obj : MonoBehaviour
 {
-    public int scene_num;
-    
-    // Start is called before the first frame update
-    // 开始方法
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         return;
     }
     void Update()

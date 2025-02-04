@@ -8,7 +8,6 @@ public class piano_perspective : MonoBehaviour
     Vector3 CameraPositionAfterClick = new Vector3(0, 0, 80);
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         return;
     }
     void Update()
