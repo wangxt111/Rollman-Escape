@@ -12,4 +12,7 @@ public static class info{
     public static int current_scene_num = 1 ;
 
     public static bool in_childscene = false; //在子场景中无法转动摄像头
+    public static List<int> targetsong = new List<int> {0,1,2};
+    public static List<int> currentsong = new List<int>();
+    public static bool finishsong = false; //是否完成当前歌曲
 }

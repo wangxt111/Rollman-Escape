@@ -44,8 +44,14 @@ public class keyboard : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 if(isfinished){
-                    Debug.Log("击中了键盘"+KeyboardID);
                     SwitchSprite();
+                    if(info.finishsong) return;
+                    info.currentsong.Add(KeyboardID);
+                    if(CheckSong()){
+                        Debug.Log("完成");
+                        info.finishsong = true;
+                        info.currentsong.Clear();
+                    }
                 }
             }
         }
@@ -79,5 +85,18 @@ public class keyboard : MonoBehaviour
         spriteRenderer.sprite = originalSprite;
 
         isSwitching = false; // 标记切换结束
+    }
+    bool CheckSong(){
+        int l = info.currentsong.Count;
+        int c = info.targetsong.Count;
+        if(l>=c){
+            for(int i=1;i<=c;i++){
+                if(info.currentsong[l-i]!=info.targetsong[c-i]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
 }

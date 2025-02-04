@@ -21,6 +21,7 @@ public class CameraRoomController : MonoBehaviour
         {
             if(info.in_childscene){
                 info.in_childscene = false ;
+                info.currentsong.Clear();
                 Utils.ResetCamera() ; //重置摄像头回原位
             }else if(info.current_scene_num == 5){
                 transform.Rotate(90f,0f,0f) ;
