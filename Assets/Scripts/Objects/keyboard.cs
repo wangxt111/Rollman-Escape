@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class keyboard : MonoBehaviour
+public class Keyboard : MonoBehaviour
 {
     public int KeyboardID;
     public bool isfinished;
@@ -13,6 +13,7 @@ public class keyboard : MonoBehaviour
 
     private Sprite originalSprite; // 用于存储原始Sprite
     private bool isSwitching = false; // 标记是否正在切换Sprite
+    public GameObject targetkeyboard;
     void Start()
     {
         originalSprite = GetComponent<SpriteRenderer>().sprite;
@@ -24,6 +25,7 @@ public class keyboard : MonoBehaviour
     }
     void Update()
     {
+        if(info.currentobject != null)Debug.Log(info.currentobject.name);
         // 检测鼠标左键是否被按下
         if (!isSwitching && Input.GetMouseButtonDown(0))
         {
@@ -48,17 +50,17 @@ public class keyboard : MonoBehaviour
                     if(info.finishsong) return;
                     info.currentsong.Add(KeyboardID);
                     if(CheckSong()){
-                        Debug.Log("完成");
                         info.finishsong = true;
                         info.currentsong.Clear();
+                        BirdAppear();
                     }
+                }else if(info.currentobject == targetkeyboard){
+                    GameObject.Find("keyboard_perspective"+KeyboardID).GetComponent<Renderer>().enabled = true;
+                    keyboardrenderer.enabled = true;
+                    isfinished = true;
+                    Utils.ClearTableButton(info.currentindex);
                 }
             }
-        }
-        else
-        {
-            // 可选：调试信息，帮助理解为什么没有击中任何对象
-            Debug.Log("没有击中任何对象");
         }
     }
     // 调用此方法来开始切换Sprite的过程
@@ -98,5 +100,9 @@ public class keyboard : MonoBehaviour
             return true;
         }
         return false;
+    }
+    void BirdAppear(){
+        GameObject.Find("Bird").GetComponent<Renderer>().enabled = true;
+        GameObject.Find("Award").GetComponent<Renderer>().enabled = true;
     }
 }

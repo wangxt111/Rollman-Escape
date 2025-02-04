@@ -33,6 +33,5 @@ public class SceneSwitcher : MonoBehaviour
         {
             info.current_scene_num = 1 ;
         }
-        Debug.Log("current_num"+info.current_scene_num);
     }
 }

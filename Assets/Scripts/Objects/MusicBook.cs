@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Piano_perspective : MonoBehaviour
+public class MusicBook : MonoBehaviour
 {
-    Vector3 CameraPositionAfterClick = new Vector3(0, 0, 80);
+    Vector3 CameraPositionAfterClick = new Vector3(8.5f, 0, 2.6f);
+    public bool isfinished = false;
+    Renderer objectrenderer;
+    public GameObject targetobject;
     void Start()
     {
+        objectrenderer = GetComponent<Renderer>();
+        if(!isfinished){
+            objectrenderer.enabled = false;
+        }
         return;
     }
     void Update()
@@ -31,7 +38,13 @@ public class Piano_perspective : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                Utils.MoveCamera(CameraPositionAfterClick,true);
+                if(isfinished){
+                    Utils.MoveCamera(CameraPositionAfterClick,false);
+                }else if(info.currentobject == targetobject){
+                    objectrenderer.enabled = true;
+                    isfinished = true;
+                    Utils.ClearTableButton(info.currentindex);
+                }
             }
         }
     }
