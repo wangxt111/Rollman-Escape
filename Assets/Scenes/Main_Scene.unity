@@ -1065,6 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e071eeb7decfeb4d983252ce12df425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraPositionAfterClick: {x: 0, y: 0, z: 38}
 --- !u!65 &172940029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3575,7 +3576,7 @@ GameObject:
   - component: {fileID: 809924404}
   - component: {fileID: 809924403}
   m_Layer: 0
-  m_Name: "\u573A\u666F1 \u8BD5\u53771"
+  m_Name: paper1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3815,8 +3816,10 @@ GameObject:
   m_Component:
   - component: {fileID: 887509788}
   - component: {fileID: 887509787}
+  - component: {fileID: 887509790}
+  - component: {fileID: 887509789}
   m_Layer: 0
-  m_Name: "\u573A\u666F1 \u590D\u5370\u673A"
+  m_Name: copy_machine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3889,6 +3892,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 688783871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887509789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887509786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546eb5b81ea92594b9f0d778f8f1d621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprites:
+  - {fileID: 21300000, guid: d5e8e8f7f6288a1499b38f9497583030, type: 3}
+  - {fileID: 21300000, guid: 3c4ada1bcc65c014da2d12ce67475b50, type: 3}
+  targetpaper:
+  - {fileID: 809924400}
+  - {fileID: 978262042}
+  - {fileID: 2043183880}
+--- !u!65 &887509790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887509786}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.128694, y: 5.0145507, z: 0}
+  m_Center: {x: 2.6205401, y: -2.5738156, z: 0}
 --- !u!1 &896628830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,7 +4486,7 @@ GameObject:
   - component: {fileID: 978262046}
   - component: {fileID: 978262045}
   m_Layer: 0
-  m_Name: "\u573A\u666F1 \u8BD5\u53772"
+  m_Name: paper2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7795,7 +7838,7 @@ GameObject:
   - component: {fileID: 2043183884}
   - component: {fileID: 2043183883}
   m_Layer: 0
-  m_Name: "\u573A\u666F1 \u8BD5\u53773"
+  m_Name: paper3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
