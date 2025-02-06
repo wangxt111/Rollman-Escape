@@ -22,10 +22,11 @@ public class Safebox_perspective_close : MonoBehaviour
     }
     void Update()
     {
-        if( info.safe_box == 0 ) CameraPositionAfterClick = new Vector3(0, 32, 28);
-        if( info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 48, 38);
+        if( info.safe_box == 0 || info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 32, 28);
         if( info.safe_box == 2 )
         {
+            Collider collider = GetComponent<Collider>();
+            collider.enabled = false;
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = safebox_open;
             childRenderers = GetComponentsInChildren<Renderer>(true);

@@ -5,17 +5,16 @@ using UnityEngine;
 // 放大的保险箱场景之间的切换
 public class Safebox_perspective_open : MonoBehaviour
 {
-    private Vector3 CameraPositionAfterClick = new Vector3(0, 48, 38) ;
+    public Sprite newSprite;
     void Start()
     {
         return;
     }
+
     void Update()
     {
-        // 检测鼠标左键是否被按下
         if (Input.GetMouseButtonDown(0) && info.finishpassword == true)
         {
-            Debug.Log("Safebox_perspective_open");
             HandleMouseClick();
         }
     }
@@ -33,10 +32,23 @@ public class Safebox_perspective_open : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 Debug.Log(info.safe_box);
-                if( info.safe_box == 0 ) Utils.MoveCamera(CameraPositionAfterClick,true,true);
-                if( info.safe_box == 1 ) Utils.ResetCamera();
-                if( info.safe_box != 2 ) ++ info.safe_box ;
+                if (info.safe_box == 0) SwitchSprite();
+                if (info.safe_box == 1) Utils.ResetCamera();
+                if (info.safe_box != 2) ++info.safe_box;
             }
         }
+    }
+
+    public void SwitchSprite()
+    {
+        StartCoroutine(SwitchAndRestoreSprite());
+    }
+
+    IEnumerator SwitchAndRestoreSprite()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = newSprite;
     }
 }
