@@ -17,9 +17,5 @@ public class SceneSwitcher_start : MonoBehaviour
         Destroy(gameObject);
         SceneManager.LoadScene("TableBar");
         SceneManager.LoadScene("Main_Scene", LoadSceneMode.Additive);
-        // SceneManager.LoadScene("Wall1", LoadSceneMode.Additive);
-        // SceneManager.LoadScene("Wall2", LoadSceneMode.Additive);
-        // SceneManager.LoadScene("Wall3", LoadSceneMode.Additive);
-        // SceneManager.LoadScene("Wall4", LoadSceneMode.Additive);
     }
 }

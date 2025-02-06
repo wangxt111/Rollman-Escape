@@ -5,7 +5,7 @@ using UnityEngine;
 // 放大的保险箱场景之间的切换
 public class Safebox_perspective_open : MonoBehaviour
 {
-    public Vector3 CameraPositionAfterClick ;
+    private Vector3 CameraPositionAfterClick = new Vector3(0, 48, 38) ;
     void Start()
     {
         return;
@@ -32,7 +32,9 @@ public class Safebox_perspective_open : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                Utils.MoveCamera(CameraPositionAfterClick,true,true);
+                Debug.Log(info.safe_box);
+                if( info.safe_box == 0 ) Utils.MoveCamera(CameraPositionAfterClick,true,true);
+                if( info.safe_box == 1 ) Utils.ResetCamera();
                 if( info.safe_box != 2 ) ++ info.safe_box ;
             }
         }

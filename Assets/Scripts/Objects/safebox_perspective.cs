@@ -5,16 +5,36 @@ using UnityEngine;
 // 切换到放大的保险箱场景
 public class Safebox_perspective_close : MonoBehaviour
 {
-    Vector3 CameraPositionAfterClick = new Vector3(0, 0, 28);
+    Vector3 CameraPositionAfterClick = new Vector3(0, 40, 28);
+    public Sprite safebox_open;
+    private Renderer[] childRenderers;
     void Start()
     {
+        childRenderers = GetComponentsInChildren<Renderer>(true);
+        foreach (Renderer renderer in childRenderers)
+        {
+            if (renderer.gameObject != this.gameObject)
+            {
+                renderer.enabled = false;
+            }
+        }
         return;
     }
     void Update()
     {
-        if( info.safe_box == 0 ) CameraPositionAfterClick = new Vector3(0, 0, 28);
-        if( info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 0, 38);
-        if( info.safe_box == 2 ) CameraPositionAfterClick = new Vector3(0, 0, 48);
+        if( info.safe_box == 0 ) CameraPositionAfterClick = new Vector3(0, 32, 28);
+        if( info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 48, 38);
+        if( info.safe_box == 2 )
+        {
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = safebox_open;
+            childRenderers = GetComponentsInChildren<Renderer>(true);
+            foreach (Renderer renderer in childRenderers)
+            {
+                renderer.enabled = true;
+            }
+            return;
+        }
         // 检测鼠标左键是否被按下
         if (Input.GetMouseButtonDown(0))
         {
@@ -32,7 +52,7 @@ public class Safebox_perspective_close : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject && info.safe_box != 2)
             {
                 Utils.MoveCamera(CameraPositionAfterClick,true);
             }
