@@ -3819,7 +3819,7 @@ GameObject:
   - component: {fileID: 887509790}
   - component: {fileID: 887509789}
   m_Layer: 0
-  m_Name: copy_machine1
+  m_Name: copy_machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3905,8 +3905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprites:
-  - {fileID: 21300000, guid: d5e8e8f7f6288a1499b38f9497583030, type: 3}
-  - {fileID: 21300000, guid: 3c4ada1bcc65c014da2d12ce67475b50, type: 3}
+  - {fileID: 21300000, guid: 1799af0725e1c9e4b91929c546cb48b0, type: 3}
+  - {fileID: 21300000, guid: 1f1c215c04cc47140826d7897bbebc62, type: 3}
+  - {fileID: 21300000, guid: b3ab913a487039c4c976fe4197f39207, type: 3}
+  finalSprite: {fileID: 21300000, guid: 3c4ada1bcc65c014da2d12ce67475b50, type: 3}
   targetpaper:
   - {fileID: 809924400}
   - {fileID: 978262042}

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Copy_Machine : MonoBehaviour
 {
     public Sprite[] newSprites; // 要切换的新图片数组
+    public Sprite finalSprite;
     private int currentSpriteIndex = 0; // 当前Sprite索引
     private bool isSwitching = false; // 标记是否正在切换Sprite
     public GameObject[] targetpaper;
@@ -54,11 +55,21 @@ public class Copy_Machine : MonoBehaviour
         if (currentSpriteIndex < newSprites.Length)
         {
             Utils.ClearTableButton(info.currentindex);
-            Debug.Log("Switching to next sprite"+currentSpriteIndex);
-            Debug.Log("sprite"+newSprites.Length);
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = newSprites[currentSpriteIndex];
             currentSpriteIndex++;
         }
+        if( currentSpriteIndex == newSprites.Length )
+        {
+            StartCoroutine(WaitAndSwitchToFinalSprite());
+        }
+    }
+
+    private IEnumerator WaitAndSwitchToFinalSprite()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = finalSprite;
     }
 }
