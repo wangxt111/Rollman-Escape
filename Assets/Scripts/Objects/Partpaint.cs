@@ -39,10 +39,12 @@ public class PartOfPaint : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
+                Debug.Log("Painted!");
                 if(info.currentobject == brush){
                     if(info.brush_color != Color.clear){
                         ChangeColorTo(info.brush_color);
                         if((Color)info.brush_color == TargetColor){
+                            Debug.Log("Painted correctly!");
                             info.correctcolor[number] = true;
                             if(CheckColor()){
                                 SpriteRenderer paintrender = GameObject.FindWithTag("Paint").GetComponent<SpriteRenderer>();
