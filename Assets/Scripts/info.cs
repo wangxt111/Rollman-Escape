@@ -19,4 +19,7 @@ public static class info{
     public static List<int> currentpassword = new List<int>();
     public static bool finishpassword = false; //是否完成密码输入
     public static int safe_box = 0; //0、1、2分别表示保险箱关闭、半开、全开
+    public static Color32 brush_color = Color.clear; //画笔颜色
+    public static bool[] correctcolor = new bool[7];
+    public static bool finishpaint = false; //是否完成画图
 }

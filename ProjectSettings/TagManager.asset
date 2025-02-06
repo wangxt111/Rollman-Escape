@@ -24,6 +24,8 @@ TagManager:
   - button17
   - button18
   - button19
+  - Brush
+  - Paint
   layers:
   - Default
   - TransparentFX
