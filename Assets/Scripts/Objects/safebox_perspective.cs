@@ -2,20 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-// 切换到打开的保险箱
-public class Safebox_perspective_open : MonoBehaviour
+// 切换到放大的保险箱场景
+public class Safebox_perspective_close : MonoBehaviour
 {
-    public Vector3 CameraPositionAfterClick ;
+    Vector3 CameraPositionAfterClick = new Vector3(0, 0, 28);
     void Start()
     {
         return;
     }
     void Update()
     {
+        if( info.safe_box == 0 ) CameraPositionAfterClick = new Vector3(0, 0, 28);
+        if( info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 0, 38);
+        if( info.safe_box == 2 ) CameraPositionAfterClick = new Vector3(0, 0, 48);
         // 检测鼠标左键是否被按下
-        if (Input.GetMouseButtonDown(0) && info.finishpassword == true)
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Safebox_perspective_open");
             HandleMouseClick();
         }
     }

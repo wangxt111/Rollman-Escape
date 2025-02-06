@@ -6,9 +6,9 @@ using UnityEngine;
 
 public static class Utils{
     public static Vector3 CameraPostionBeforeMovement = Vector3.zero;
-    public static void MoveCamera(Vector3 position,bool isorthographic){
+    public static void MoveCamera(Vector3 position,bool isorthographic,bool child2child = false){
         GameObject camera = GameObject.Find("Main Camera");
-        CameraPostionBeforeMovement = camera.transform.position;
+        if( child2child == false ) CameraPostionBeforeMovement = camera.transform.position;
         camera.transform.position = position;
         info.in_childscene = true;
         camera.GetComponent<Camera>().orthographic = isorthographic;

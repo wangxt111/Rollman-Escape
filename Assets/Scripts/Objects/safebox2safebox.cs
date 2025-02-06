@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-// 切换到关闭的保险箱
-public class Safebox_perspective_close : MonoBehaviour
+// 放大的保险箱场景之间的切换
+public class Safebox_perspective_open : MonoBehaviour
 {
-    Vector3 CameraPositionAfterClick = new Vector3(0, 0, 28);
+    public Vector3 CameraPositionAfterClick ;
     void Start()
     {
         return;
@@ -13,8 +13,9 @@ public class Safebox_perspective_close : MonoBehaviour
     void Update()
     {
         // 检测鼠标左键是否被按下
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && info.finishpassword == true)
         {
+            Debug.Log("Safebox_perspective_open");
             HandleMouseClick();
         }
     }
@@ -31,7 +32,8 @@ public class Safebox_perspective_close : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                Utils.MoveCamera(CameraPositionAfterClick,true);
+                Utils.MoveCamera(CameraPositionAfterClick,true,true);
+                if( info.safe_box != 2 ) ++ info.safe_box ;
             }
         }
     }
