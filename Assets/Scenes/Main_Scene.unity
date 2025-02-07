@@ -3261,8 +3261,8 @@ GameObject:
   m_Component:
   - component: {fileID: 745632878}
   - component: {fileID: 745632879}
-  - component: {fileID: 745632880}
   - component: {fileID: 745632881}
+  - component: {fileID: 745632882}
   m_Layer: 0
   m_Name: "\u753B \u534A\u6210\u54C1"
   m_TagString: Paint
@@ -3344,18 +3344,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &745632880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745632877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b35e92da3e2a58741afdbf5d2887e830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &745632881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3373,10 +3361,22 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 3.5422082, y: 4.057948, z: 0}
   m_Center: {x: 4.092892, y: 0.87346447, z: 0}
+--- !u!114 &745632882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745632877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749260617
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,5 @@ public static class Utils{
     public static void ChangeTableButton(int index, Sprite newSprite){ //修改格子内容
         GameObject targetbutton = GameObject.FindGameObjectWithTag("button"+index);
         targetbutton.GetComponentInChildren<TextMeshProUGUI>().text = newSprite.name;
-        Debug.Log(11111111);
     }
 }

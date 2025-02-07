@@ -33,7 +33,6 @@ public class Obj : MonoBehaviour
                 GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
                 if (freebutton != null)
                 {
-                    Debug.Log("id" + freebutton.GetComponent<tablebutton>().buttonID);
                     freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                     this.gameObject.SetActive(false);
