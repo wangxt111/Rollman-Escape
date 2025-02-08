@@ -3447,7 +3447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  newSprite: {fileID: 21300000, guid: 02a425b29559d564e8836891e1bfa31e, type: 3}
+  newSprite: {fileID: 21300000, guid: 3203af2f198bf734fb94370bee09a73e, type: 3}
   targetobject: {fileID: 0}
   isfinished: 1
 --- !u!212 &765859753
