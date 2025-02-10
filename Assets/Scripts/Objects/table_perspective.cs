@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 // 切换到放大的保险箱场景
-public class Safebox_perspective_close : MonoBehaviour
+public class Table_perspective_close : MonoBehaviour
 {
-    Vector3 CameraPositionAfterClick = new Vector3(0, 32, 28);
+    Vector3 CameraPositionAfterClick = new Vector3(0, 32, 0);
     public Sprite safebox_open;
     private Renderer[] childRenderers;
     void Start()
@@ -22,7 +22,7 @@ public class Safebox_perspective_close : MonoBehaviour
     }
     void Update()
     {
-        if( info.safe_box == 0 || info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 32, 28);
+        if( info.safe_box == 0 || info.safe_box == 1 ) CameraPositionAfterClick = new Vector3(0, 32, 0);
         if( info.safe_box == 2 )
         {
             Collider collider = GetComponent<Collider>();
