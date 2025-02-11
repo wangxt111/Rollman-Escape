@@ -5,11 +5,7 @@ using UnityEngine;
 
 public class Horizontal_bar : MonoBehaviour
 {
-    public Sprite[] newSprites; // 要切换的新图片数组
-    public Sprite finalSprite;
-    private int currentSpriteIndex = 0; // 当前Sprite索引
     private bool isSwitching = false; // 标记是否正在切换Sprite
-    public GameObject[] targetpaper;
 
     void Start()
     {
@@ -35,41 +31,12 @@ public class Horizontal_bar : MonoBehaviour
         {
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                foreach (GameObject paper in targetpaper)
+                if (info.horizontal_bar != 3)
                 {
-                    if (info.currentobject == paper)
-                    {
-                        SwitchToNextSprite(); // 切换到下一个Sprite
-                        return;
-                    }
+                    ++ info.horizontal_bar ;
+                    info.is_switching = true ;
                 }
             }
         }
-    }
-
-    private void SwitchToNextSprite()
-    {
-        if (newSprites.Length == 0) return;
-        
-        // 只在索引未到最后一个时切换
-        if (currentSpriteIndex < newSprites.Length)
-        {
-            Utils.ClearTableButton(info.currentindex);
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = newSprites[currentSpriteIndex];
-            currentSpriteIndex++;
-        }
-        if( currentSpriteIndex == newSprites.Length )
-        {
-            StartCoroutine(WaitAndSwitchToFinalSprite());
-        }
-    }
-
-    private IEnumerator WaitAndSwitchToFinalSprite()
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = finalSprite;
     }
 }
