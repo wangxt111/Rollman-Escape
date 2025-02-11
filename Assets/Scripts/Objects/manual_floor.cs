@@ -44,6 +44,7 @@ public class Manual_Floor : MonoBehaviour
                 {
                     freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
+                    info.manual_table = 1;
                     this.gameObject.SetActive(false);
                 }
             }
