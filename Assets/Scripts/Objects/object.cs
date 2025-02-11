@@ -35,6 +35,9 @@ public class Obj : MonoBehaviour
                 {
                     freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
+                    if( this.gameObject.name == "ink" ) info.ink = true;
+                    if( this.gameObject.name == "tomato" ) info.tomato = true;
+                    if( this.gameObject.name == "manual_close" ) info.manual_table = 1;
                     this.gameObject.SetActive(false);
                 }
             }

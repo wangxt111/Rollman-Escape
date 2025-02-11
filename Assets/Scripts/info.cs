@@ -21,4 +21,8 @@ public static class info{
     public static int safe_box = 0; //0、1、2分别表示保险箱关闭、半开、全开
     public static Color32 brush_color = Color.clear; //画笔颜色
     public static bool[] correctcolor = new bool[7];
+    public static bool ink = false; //是否拿到墨水
+    public static bool tomato = false; //是否拿到番茄
+    public static bool manual = false; //综评手册是否掉落
+    public static int manual_table = 0; //0、1、2分别表示没拿到综评手册、拿到综评手册（桌子上的综评手册collider显示）、桌子上综评手册显示
 }
