@@ -17,7 +17,7 @@ public class Manual_Floor : MonoBehaviour
     }
     void Update()
     {
-        if (info.manual == false) return;
+        if (info.manual == 0) return;
         manual_renderer.enabled = true;
         manual_collider.enabled = true;
         // 检测鼠标左键是否被按下

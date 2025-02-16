@@ -23,7 +23,7 @@ public static class info{
     public static bool[] correctcolor = new bool[7];
     public static bool ink = false; //是否拿到墨水
     public static bool tomato = false; //是否拿到番茄
-    public static bool manual = false; //综评手册是否掉落
+    public static int manual = 0; //0、1、2、3表示综评手册未掉落、开始掉落（记录时间）、正在掉落、已经掉落（未实现）
     public static int manual_table = 0; //0、1、2分别表示没拿到综评手册、拿到综评手册（桌子上的综评手册collider显示）、桌子上综评手册显示
     public static bool is_switching = false; //是否正在切换镜子场景
     public static int horizontal_bar = 0; //0、1、2、3分别表示没上杆、上杆、做第一个引体向上、做第二个引体向上

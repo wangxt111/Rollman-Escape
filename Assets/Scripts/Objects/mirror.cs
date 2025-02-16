@@ -29,7 +29,7 @@ public class Mirror : MonoBehaviour
         else if (info.horizontal_bar == 3)
         {
             StartCoroutine(WaitAndSwitchSpritesSequentially(newSprites2));
-            info.manual = true;
+            info.manual = 1;
         }
 
         info.is_switching = false;
