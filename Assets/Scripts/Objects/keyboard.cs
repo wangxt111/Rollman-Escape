@@ -104,5 +104,6 @@ public class Keyboard : MonoBehaviour
     void BirdAppear(){
         GameObject.Find("Bird").GetComponent<Renderer>().enabled = true;
         GameObject.Find("Award").GetComponent<Renderer>().enabled = true;
+        GameObject.Find("Award").GetComponent<BoxCollider>().enabled = true;
     }
 }
