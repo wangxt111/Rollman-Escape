@@ -583,6 +583,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: a0a35ddc539fbf44b8dab1ab501f548c, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &124509905
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +813,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 53a2e97ad7d61374094459631322c5d4, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &163449238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2375,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: b18e6f22c194c6b438a92a59448e1239, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &408044930
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2602,6 +2605,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 84d51b723e27a3843a19a5f2cb45c28b, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 1592388004}
+  piano: {fileID: 1013606179}
 --- !u!1 &546363420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +2843,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 8d9ed2153eaabc04a8da65caf59615bd, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &552168761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3328,6 +3333,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: a8597efdfb1b8554dbc36d85c42df436, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &644697282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3846,6 +3852,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 5cb520334271b924c893c636a7907b0d, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 1268995256}
+  piano: {fileID: 1013606179}
 --- !u!65 &740197882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4249,6 +4256,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 7a6b3b7ae4d5077408bb530c5a723a51, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &758450538
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,6 +5160,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: b175fc753be4a24449401d03a0fc9617, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &887509786
 GameObject:
   m_ObjectHideFlags: 0
@@ -5354,7 +5363,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: abcda2b44e6140b4a9ee676c73e4f988, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5639,6 +5648,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8d431774347a94cbb63de6d9f989fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bird: {fileID: 1539760577}
+  anime:
+  - {fileID: 21300000, guid: 4c4b0e2dcc9869249bfc9c59585e34ca, type: 3}
+  - {fileID: 21300000, guid: de661815f153c7c48be898aa012c8414, type: 3}
+  - {fileID: 21300000, guid: 7f858b749a4a9fe40ac0b02ea49f3658, type: 3}
+  - {fileID: 21300000, guid: 1e0afda0849e61c428cbad40e0f518ca, type: 3}
+  - {fileID: 21300000, guid: 22bf026e7d6488245b1cccc317b27a23, type: 3}
+  - {fileID: 21300000, guid: dd90d4592c911524d882fe1d4692dcd5, type: 3}
+  - {fileID: 21300000, guid: 0da1c04278c698149a431824d0cb18a2, type: 3}
+  - {fileID: 21300000, guid: b0ccf2b25a0c41c4fa800e01fb451f32, type: 3}
+  - {fileID: 21300000, guid: c8ce04e783dba0a4dae6c9ca32288bf4, type: 3}
+  - {fileID: 21300000, guid: f2f1abdf190534a48b533380347a7fd6, type: 3}
+  - {fileID: 21300000, guid: 71e77ffe0032bba49b5170913bb8ca2e, type: 3}
+  finalbird: {fileID: 21300000, guid: 803e7f68f0f6d704cbd9e7eeb89b1cce, type: 3}
 --- !u!1 &1034995599
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,6 +5897,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 5155d85dd2e9165418917e2f32c1496c, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &1072378495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6379,6 +6403,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: e8970bcd56e24924d8183f69c4305c1c, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &1268995256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6748,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 7eca86ba124bdad4bbcad0f0aa1c1f7a, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 235135077}
+  piano: {fileID: 1013606179}
 --- !u!65 &1333342053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7399,6 +7425,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 381680e7e3e9ba5488df0c4dba081d2b, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!1 &1539760577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7586,6 +7613,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 1bfa1101794bc924c8430d6f43f8b8f1, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &1540566354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9162,6 +9190,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: ff5541c3e6f152147bca2e457ae71023, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 1494432132}
+  piano: {fileID: 1013606179}
 --- !u!1 &1827716155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9608,6 +9637,7 @@ MonoBehaviour:
   newSprite: {fileID: 21300000, guid: 30ed0ee0d40bc38428bccb4601ebacbd, type: 3}
   switchDuration: 0.5
   targetkeyboard: {fileID: 0}
+  piano: {fileID: 1013606179}
 --- !u!65 &1941380506
 BoxCollider:
   m_ObjectHideFlags: 0

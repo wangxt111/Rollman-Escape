@@ -6,6 +6,9 @@ using UnityEngine;
 public class Piano_perspective : MonoBehaviour
 {
     Vector3 CameraPositionAfterClick = new Vector3(0, 0, 80);
+    public GameObject bird;
+    public Sprite[] anime;
+    public Sprite finalbird;
     void Start()
     {
         return;
@@ -34,5 +37,21 @@ public class Piano_perspective : MonoBehaviour
                 Utils.MoveCamera(CameraPositionAfterClick,true);
             }
         }
+    }
+    public void BirdAppear(){
+        StartCoroutine(WaitAndSwitchSpritesSequentially(anime));
+    }
+    public IEnumerator WaitAndSwitchSpritesSequentially(Sprite[] sprites)
+    {
+        SpriteRenderer spriteRenderer = bird.GetComponent<SpriteRenderer>();
+        bird.GetComponent<Renderer>().enabled = true;
+        foreach (Sprite spr in sprites)
+        {
+            spriteRenderer.sprite = spr;
+            yield return new WaitForSeconds(0.167f);
+        }
+        spriteRenderer.sprite = finalbird;
+        GameObject.Find("Award").GetComponent<Renderer>().enabled = true;
+        GameObject.Find("Award").GetComponent<BoxCollider>().enabled = true;
     }
 }

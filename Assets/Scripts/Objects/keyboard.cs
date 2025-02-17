@@ -14,6 +14,7 @@ public class Keyboard : MonoBehaviour
     private Sprite originalSprite; // 用于存储原始Sprite
     private bool isSwitching = false; // 标记是否正在切换Sprite
     public GameObject targetkeyboard;
+    public GameObject piano;
     void Start()
     {
         originalSprite = GetComponent<SpriteRenderer>().sprite;
@@ -49,11 +50,6 @@ public class Keyboard : MonoBehaviour
                     SwitchSprite();
                     if(info.finishsong) return;
                     info.currentsong.Add(KeyboardID);
-                    if(CheckSong()){
-                        info.finishsong = true;
-                        info.currentsong.Clear();
-                        BirdAppear();
-                    }
                 }else if(info.currentobject == targetkeyboard){
                     GameObject.Find("keyboard_perspective"+KeyboardID).GetComponent<Renderer>().enabled = true;
                     keyboardrenderer.enabled = true;
@@ -87,6 +83,15 @@ public class Keyboard : MonoBehaviour
         spriteRenderer.sprite = originalSprite;
 
         isSwitching = false; // 标记切换结束
+        if(CheckSong()){
+            info.finishsong = true;
+            //切回原场景
+            info.in_childscene = false ;
+            info.currentsong.Clear();
+            info.currentpassword.Clear();
+            Utils.ResetCamera() ; //重置摄像头回原位
+            piano.GetComponent<Piano_perspective>().BirdAppear();
+        }
     }
     bool CheckSong(){
         int l = info.currentsong.Count;
@@ -100,10 +105,5 @@ public class Keyboard : MonoBehaviour
             return true;
         }
         return false;
-    }
-    void BirdAppear(){
-        GameObject.Find("Bird").GetComponent<Renderer>().enabled = true;
-        GameObject.Find("Award").GetComponent<Renderer>().enabled = true;
-        GameObject.Find("Award").GetComponent<BoxCollider>().enabled = true;
     }
 }
