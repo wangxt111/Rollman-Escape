@@ -7,7 +7,6 @@ public class Copy_Machine : MonoBehaviour
 {
     public Sprite[] newSprites; // 要切换的新图片数组
     public Sprite finalSprite;
-    private int currentSpriteIndex = 0; // 当前Sprite索引
     private bool isSwitching = false; // 标记是否正在切换Sprite
     public GameObject[] targetpaper;
 
@@ -52,15 +51,16 @@ public class Copy_Machine : MonoBehaviour
         if (newSprites.Length == 0) return;
         
         // 只在索引未到最后一个时切换
-        if (currentSpriteIndex < newSprites.Length)
+        if (info.copy_machine < newSprites.Length)
         {
             Utils.ClearTableButton(info.currentindex);
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = newSprites[currentSpriteIndex];
-            currentSpriteIndex++;
+            spriteRenderer.sprite = newSprites[info.copy_machine];
+            info.copy_machine++;
         }
-        if( currentSpriteIndex == newSprites.Length )
+        if( info.copy_machine == newSprites.Length )
         {
+            Debug.Log(newSprites.Length);
             StartCoroutine(WaitAndSwitchToFinalSprite());
         }
     }
