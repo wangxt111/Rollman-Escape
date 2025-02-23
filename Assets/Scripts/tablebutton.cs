@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class tablebutton : MonoBehaviour
 {
     // Start is called before the first frame update
     // 开始方法
     public int buttonID;
+    public Sprite defualtimage;
     public GameObject storeobject = null;
     Button button;
     void Start()
     {
-        changetext(this.gameObject, buttonID.ToString());
+        changetext(this.gameObject,"");
+        changeimage(this.gameObject,defualtimage);
         button = GetComponent<Button>();
         button.onClick.AddListener(TaskOnClick);
     }
@@ -28,6 +31,10 @@ public class tablebutton : MonoBehaviour
         TextMeshProUGUI text = targetbutton.GetComponentInChildren<TextMeshProUGUI>();
         text.text = newtext;
     }
+    public void changeimage(GameObject targetbutton, Sprite newimage){
+        Image image  = targetbutton.GetComponent<Image>();
+        image.sprite = newimage;
+    }
     public void changestore(GameObject targetbutton, GameObject newobject){
         targetbutton.GetComponent<tablebutton>().storeobject = newobject;
     }
@@ -37,9 +44,9 @@ public class tablebutton : MonoBehaviour
         // Button被点击时执行的操作
         if(info.currentobject != null && storeobject == null){
             storeobject = info.currentobject;
-            changetext(GameObject.FindGameObjectWithTag("button"+info.currentindex), info.currentindex.ToString());
+            changeimage(this.gameObject, GameObject.FindGameObjectWithTag("button"+info.currentindex).GetComponent<Image>().sprite);
+            changeimage(GameObject.FindGameObjectWithTag("button"+info.currentindex), defualtimage);
             changestore(GameObject.FindGameObjectWithTag("button"+info.currentindex), null);
-            changetext(this.gameObject, storeobject.name);
             info.currentindex = -1;
             info.currentobject = null;
         }else if(storeobject != null){

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Obj : MonoBehaviour
 {
+    public Sprite image;
     void Start()
     {
         return;
@@ -33,7 +34,7 @@ public class Obj : MonoBehaviour
                 GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
                 if (freebutton != null)
                 {
-                    freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
+                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                     if( this.gameObject.name == "ink" ) info.ink = true;
                     if( this.gameObject.name == "tomato" ) info.tomato = true;
