@@ -15,6 +15,7 @@ public class Keyboard : MonoBehaviour
     private bool isSwitching = false; // 标记是否正在切换Sprite
     public GameObject targetkeyboard;
     public GameObject piano;
+    public AudioSource audiosource;
     void Start()
     {
         originalSprite = GetComponent<SpriteRenderer>().sprite;
@@ -48,6 +49,7 @@ public class Keyboard : MonoBehaviour
             {
                 if(isfinished){
                     SwitchSprite();
+                    audiosource.Play(); //播放音频
                     if(info.finishsong) return;
                     info.currentsong.Add(KeyboardID);
                 }else if(info.currentobject == targetkeyboard){
