@@ -38,7 +38,7 @@ public class MusicBook : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                if(isfinished){
+                if(isfinished && !info.in_childscene){
                     Utils.MoveCamera(CameraPositionAfterClick,false);
                 }else if(info.currentobject == targetobject){
                     objectrenderer.enabled = true;
