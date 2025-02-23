@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class keyboard_hide13 : MonoBehaviour
 {
+    public Sprite image;
     void Start()
     {
         return;
@@ -33,7 +34,7 @@ public class keyboard_hide13 : MonoBehaviour
                 GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
                 if (freebutton != null)
                 {
-                    freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
+                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                     info.carpethidekeyboard = false;
                     this.gameObject.SetActive(false);

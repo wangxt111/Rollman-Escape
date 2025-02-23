@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 
 public class Leaf : MonoBehaviour
 {
+    public Sprite image;
     bool isgetted = false;
     void Start()
     {
@@ -35,7 +37,7 @@ public class Leaf : MonoBehaviour
                 if (freebutton != null)
                 {
                     if(!isgetted){
-                        freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
+                        freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
                         freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                         isgetted = true;
                     }

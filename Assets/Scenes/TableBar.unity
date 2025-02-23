@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 14
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &61133450
 GameObject:
@@ -429,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 13
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &68129596
 GameObject:
@@ -565,6 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 15
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &74511129
 GameObject:
@@ -871,6 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 4
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &374200179
 GameObject:
@@ -1141,6 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 17
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &430803254
 GameObject:
@@ -1277,6 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 16
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &583316836
 GameObject:
@@ -1547,6 +1553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 2
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &773871751
 GameObject:
@@ -1631,7 +1638,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1166565699}
   m_Direction: 0
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.99999964
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1757,7 +1764,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1891013466}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.409864
+  m_Size: 0.4099719
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2171,6 +2178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 10
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &892319454
 GameObject:
@@ -2575,6 +2583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 9
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1064714751
 GameObject:
@@ -2845,6 +2854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 8
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1166565698
 GameObject:
@@ -3056,6 +3066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 18
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1172481400
 GameObject:
@@ -3192,6 +3203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 19
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1182347986
 GameObject:
@@ -3596,6 +3608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 0
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1292200062
 GameObject:
@@ -4268,6 +4281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 5
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1499010915
 GameObject:
@@ -4886,6 +4900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 7
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1597815929
 GameObject:
@@ -5156,6 +5171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 6
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &1683611572
 GameObject:
@@ -5210,6 +5226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 3
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!114 &1683611575
 MonoBehaviour:
@@ -6014,6 +6031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 11
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &2026913079
 GameObject:
@@ -6150,6 +6168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 12
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1 &2068457644
 GameObject:
@@ -6488,6 +6507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonID: 1
+  defualtimage: {fileID: 0}
   storeobject: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
