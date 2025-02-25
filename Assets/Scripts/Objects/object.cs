@@ -44,26 +44,4 @@ public class Obj : MonoBehaviour
             }
         }
     }
-
-    // private void OnMouseDown()
-    // {
-    //     GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
-    //     if (freebutton != null){
-    //         Debug.Log("id"+freebutton.GetComponent<tablebutton>().buttonID);
-    //         freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
-    //         freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
-    //         this.gameObject.SetActive(false);
-    //     }
-    // }
-    // private void OnMouseEnter()
-    // {
-    //     // 当鼠标进入物体的碰撞器时调用
-    //     Debug.Log("鼠标进入物体：" + this.gameObject.name);
-    // }
-
-    // private void OnMouseExit()
-    // {
-    //     // 当鼠标离开物体的碰撞器时调用
-    //     Debug.Log("鼠标离开物体：" + this.gameObject.name);
-    // }
 }

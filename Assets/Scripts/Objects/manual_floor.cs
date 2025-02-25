@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Manual_Floor : MonoBehaviour
 {
+    public Sprite image;
     private Renderer manual_renderer;
     private Collider manual_collider;
     public Vector3 start;  // Start位置
@@ -60,7 +61,7 @@ public class Manual_Floor : MonoBehaviour
                 GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
                 if (freebutton != null)
                 {
-                    freebutton.GetComponent<tablebutton>().changetext(freebutton, this.gameObject.name);
+                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                     info.manual_table = 1;
                     this.gameObject.SetActive(false);

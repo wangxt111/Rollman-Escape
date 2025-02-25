@@ -29,4 +29,5 @@ public static class info{
     public static bool is_switching = false; //是否正在切换镜子场景
     public static int horizontal_bar = 0; //0、1、2、3分别表示没上杆、上杆、做第一个引体向上、做第二个引体向上
     public static bool carpethidekeyboard = true; //地毯是否隐藏键盘
+    public static int manual_object_num = 0;
 }

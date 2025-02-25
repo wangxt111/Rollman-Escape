@@ -71,5 +71,6 @@ public class Copy_Machine : MonoBehaviour
 
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = finalSprite;
+        info.copy_machine ++ ;
     }
 }

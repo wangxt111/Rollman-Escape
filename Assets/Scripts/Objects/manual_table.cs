@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Manual_Table : MonoBehaviour
 {
+    Vector3 CameraPositionAfterClick = new Vector3(0, 48, 0);
     public int type = 0; // 0: 小场景 1: 放大场景
     public GameObject targetobject;
     private Renderer manual_renderer;
@@ -26,7 +27,7 @@ public class Manual_Table : MonoBehaviour
         }
         if( info.manual_table == 2 )
         {
-            manual_collider.enabled = false;
+            if( type == 0 ) manual_collider.enabled = false;
             manual_renderer.enabled = true;
         }
         if ( Input.GetMouseButtonDown(0) )
@@ -48,8 +49,15 @@ public class Manual_Table : MonoBehaviour
             {
                 if(info.currentobject == targetobject){
                     manual_renderer.enabled = true;
-                    info.manual_table = 2;
-                    Utils.ClearTableButton(info.currentindex);
+                    if( info.manual_table == 1 )
+                    {
+                        info.manual_table = 2;
+                        Utils.ClearTableButton(info.currentindex);
+                    }
+                }
+                if( info.manual_table == 2 && type == 1 )
+                {
+                    Utils.MoveCamera(CameraPositionAfterClick,true,true);
                 }
             }
         }

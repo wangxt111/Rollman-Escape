@@ -18,7 +18,7 @@ public class Report : MonoBehaviour
     }
     void Update()
     {
-        if( info.copy_machine == 3 )
+        if( info.copy_machine == 4 )
         {
             report_renderer.enabled = true;
             report_collider.enabled = true;
