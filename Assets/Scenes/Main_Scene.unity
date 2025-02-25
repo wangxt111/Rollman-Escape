@@ -586,7 +586,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: a0a35ddc539fbf44b8dab1ab501f548c, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 99607300}
 --- !u!82 &99607300
@@ -914,7 +914,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 53a2e97ad7d61374094459631322c5d4, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 130753830}
 --- !u!82 &130753830
@@ -1915,8 +1915,8 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1013606180}
   - {fileID: 339284566}
+  - {fileID: 1013606180}
   - {fileID: 1539760578}
   - {fileID: 173137029}
   - {fileID: 1442819246}
@@ -2699,7 +2699,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: b18e6f22c194c6b438a92a59448e1239, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 408044931}
 --- !u!65 &408044930
@@ -3027,7 +3027,8 @@ MonoBehaviour:
   isfinished: 0
   newSprite: {fileID: 21300000, guid: 84d51b723e27a3843a19a5f2cb45c28b, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 1592388004}
+  targetkeyboards:
+  - {fileID: 1592388004}
   piano: {fileID: 1013606179}
   audiosource: {fileID: 538130637}
 --- !u!82 &538130637
@@ -3363,7 +3364,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 8d9ed2153eaabc04a8da65caf59615bd, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 552168762}
 --- !u!65 &552168761
@@ -3952,7 +3953,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: a8597efdfb1b8554dbc36d85c42df436, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 644697283}
 --- !u!65 &644697282
@@ -4571,7 +4572,10 @@ MonoBehaviour:
   isfinished: 0
   newSprite: {fileID: 21300000, guid: 5cb520334271b924c893c636a7907b0d, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 1268995256}
+  targetkeyboards:
+  - {fileID: 235135077}
+  - {fileID: 1494432132}
+  - {fileID: 1268995256}
   piano: {fileID: 1013606179}
   audiosource: {fileID: 740197883}
 --- !u!65 &740197882
@@ -5074,7 +5078,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 7a6b3b7ae4d5077408bb530c5a723a51, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 749260622}
 --- !u!82 &749260622
@@ -6199,7 +6203,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: b175fc753be4a24449401d03a0fc9617, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 865109700}
 --- !u!82 &865109700
@@ -7034,7 +7038,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 5155d85dd2e9165418917e2f32c1496c, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1072378496}
 --- !u!65 &1072378495
@@ -7638,7 +7642,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: e8970bcd56e24924d8183f69c4305c1c, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1244358921}
 --- !u!82 &1244358921
@@ -8222,7 +8226,10 @@ MonoBehaviour:
   isfinished: 0
   newSprite: {fileID: 21300000, guid: 7eca86ba124bdad4bbcad0f0aa1c1f7a, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 235135077}
+  targetkeyboards:
+  - {fileID: 235135077}
+  - {fileID: 1494432132}
+  - {fileID: 1268995256}
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1333342054}
 --- !u!65 &1333342053
@@ -9082,7 +9089,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 381680e7e3e9ba5488df0c4dba081d2b, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1510121772}
 --- !u!82 &1510121772
@@ -9368,7 +9375,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 1bfa1101794bc924c8430d6f43f8b8f1, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1540566355}
 --- !u!65 &1540566354
@@ -11216,7 +11223,10 @@ MonoBehaviour:
   isfinished: 0
   newSprite: {fileID: 21300000, guid: ff5541c3e6f152147bca2e457ae71023, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 1494432132}
+  targetkeyboards:
+  - {fileID: 235135077}
+  - {fileID: 1494432132}
+  - {fileID: 1268995256}
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1803128600}
 --- !u!82 &1803128600
@@ -11761,7 +11771,7 @@ MonoBehaviour:
   isfinished: 1
   newSprite: {fileID: 21300000, guid: 30ed0ee0d40bc38428bccb4601ebacbd, type: 3}
   switchDuration: 0.5
-  targetkeyboard: {fileID: 0}
+  targetkeyboards: []
   piano: {fileID: 1013606179}
   audiosource: {fileID: 1941380507}
 --- !u!65 &1941380506

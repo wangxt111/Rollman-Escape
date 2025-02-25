@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -22,7 +24,7 @@ public class Piano_perspective : MonoBehaviour
         }
     }
 
-    private void HandleMouseClick()
+    private async void HandleMouseClick()
     {
         // 通过摄像机将屏幕坐标转换为射线
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -34,6 +36,8 @@ public class Piano_perspective : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
+                // 异步等待0.1秒（100毫秒）,防止误触发keyboard
+                await Task.Delay(100);
                 Utils.MoveCamera(CameraPositionAfterClick,true);
             }
         }

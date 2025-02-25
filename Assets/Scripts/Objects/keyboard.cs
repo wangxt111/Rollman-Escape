@@ -13,7 +13,7 @@ public class Keyboard : MonoBehaviour
 
     private Sprite originalSprite; // 用于存储原始Sprite
     private bool isSwitching = false; // 标记是否正在切换Sprite
-    public GameObject targetkeyboard;
+    public List<GameObject> targetkeyboards;
     public GameObject piano;
     public AudioSource audiosource;
     void Start()
@@ -27,9 +27,8 @@ public class Keyboard : MonoBehaviour
     }
     void Update()
     {
-        if(info.currentobject != null)Debug.Log(info.currentobject.name);
         // 检测鼠标左键是否被按下
-        if (!isSwitching && Input.GetMouseButtonDown(0))
+        if (info.in_childscene && !isSwitching && Input.GetMouseButtonDown(0))
         {
             HandleMouseClick();
         }
@@ -52,7 +51,7 @@ public class Keyboard : MonoBehaviour
                     audiosource.Play(); //播放音频
                     if(info.finishsong) return;
                     info.currentsong.Add(KeyboardID);
-                }else if(info.currentobject == targetkeyboard){
+                }else if(targetkeyboards.Contains(info.currentobject)){
                     GameObject.Find("keyboard_perspective"+KeyboardID).GetComponent<Renderer>().enabled = true;
                     keyboardrenderer.enabled = true;
                     isfinished = true;
