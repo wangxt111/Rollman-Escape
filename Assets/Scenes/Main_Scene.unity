@@ -4905,7 +4905,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 100, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.72, y: 0.68, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2018505088}
@@ -12436,6 +12436,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1729782479}
   - component: {fileID: 1729782480}
+  - component: {fileID: 1729782482}
+  - component: {fileID: 1729782481}
   m_Layer: 0
   m_Name: "\u5F55\u53D6\u901A\u77E5\u4E66"
   m_TagString: Untagged
@@ -12510,6 +12512,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1729782481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729782478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 18.092968, y: 13.596418, z: 0}
+  m_Center: {x: -0.252925, y: 0.2820598, z: 0.0000009520186}
+--- !u!114 &1729782482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729782478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6bb71164530564cb658221d11a4f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773793020
 GameObject:
   m_ObjectHideFlags: 0

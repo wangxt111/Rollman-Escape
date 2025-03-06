@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 public static class Utils{
     public static Vector3 CameraPostionBeforeMovement = Vector3.zero;
-    public static void MoveCamera(Vector3 position,bool isorthographic,bool child2child = false){
+    public static void MoveCamera(Vector3 position,bool isorthographic = true,bool child2child = false,bool movetochild = true){
         GameObject camera = GameObject.Find("Main Camera");
         if( child2child == false ) CameraPostionBeforeMovement = camera.transform.position;
         camera.transform.position = position;
-        info.in_childscene = true;
+        info.in_childscene = movetochild;
         camera.GetComponent<Camera>().orthographic = isorthographic;
     }
     public static void ResetCamera(){
