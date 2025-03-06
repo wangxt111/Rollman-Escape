@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.9529412, g: 0.8156863, b: 0.38431373, a: 1}
-  newSprite: {fileID: 21300000, guid: 782da383eec87af4a8049f9537863976, type: 3}
+  newSprite: {fileID: 21300000, guid: 655083bc779d0eb4693789f5ca5cfab6, type: 3}
   targetobject: {fileID: 0}
   isfinished: 1
 --- !u!212 &163449242
@@ -5342,7 +5342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.32156864, g: 0.41960785, b: 0.62352943, a: 1}
-  newSprite: {fileID: 21300000, guid: cab29d68add9e684980236a8eaeec7b1, type: 3}
+  newSprite: {fileID: 21300000, guid: 86b8d93e17de66c4482e8680eabb4875, type: 3}
   targetobject: {fileID: 851692022}
   isfinished: 0
 --- !u!1 &740197878
@@ -6326,7 +6326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  newSprite: {fileID: 21300000, guid: 3203af2f198bf734fb94370bee09a73e, type: 3}
+  newSprite: {fileID: 21300000, guid: 0ca590737378cd445bcf4c552a4e3605, type: 3}
   targetobject: {fileID: 0}
   isfinished: 1
 --- !u!212 &765859753
@@ -7015,7 +7015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.6156863, g: 0.6784314, b: 0.2784314, a: 1}
-  newSprite: {fileID: 21300000, guid: b1702a84efa06d9439c4b0409fd2bbc8, type: 3}
+  newSprite: {fileID: 21300000, guid: a02a856ae98890647831ef9c25f60ffb, type: 3}
   targetobject: {fileID: 25906}
   isfinished: 0
 --- !u!65 &859641387
@@ -12128,7 +12128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440f99d989232c4ebbfb8f76ae81c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 02a425b29559d564e8836891e1bfa31e, type: 3}
+  image: {fileID: 21300000, guid: 0ca590737378cd445bcf4c552a4e3605, type: 3}
 --- !u!65 &1606151445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13409,7 +13409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.81960785, g: 0.4862745, b: 0.25490198, a: 1}
-  newSprite: {fileID: 21300000, guid: 165b7567f08af4e40a8a95cbef3a727e, type: 3}
+  newSprite: {fileID: 21300000, guid: aa4b67fc8610b0e4eb2c38a0989e94e2, type: 3}
   targetobject: {fileID: 357734996}
   isfinished: 0
 --- !u!1 &1861649058
