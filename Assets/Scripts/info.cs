@@ -30,4 +30,5 @@ public static class info{
     public static bool carpethidekeyboard = true; //地毯是否隐藏键盘
     public static int manual_object_num = 0;
     public static bool debug = true; //为true时直接到录取通知书（通过manual_object.cs）
+    public static bool switchingtolevel2 = false; //是否正在切换到level2
 }

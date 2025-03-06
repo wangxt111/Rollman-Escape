@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Addmission : MonoBehaviour
 {
+    public GameObject piano;
+    public GameObject window;
+    public GameObject water;
     void Start()
     {
         return;
@@ -31,10 +34,24 @@ public class Addmission : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 GameObject camera = GameObject.Find("Main Camera");
-                camera.transform.SetPositionAndRotation(Constants.Constants.level_2_camera, Constants.Constants.level_2_camera_rotation);
+                camera.transform.SetPositionAndRotation(Constants.Constants.level_1_camera, Quaternion.Euler(0f, 90f, 0f));
                 info.in_childscene = false;
                 camera.GetComponent<Camera>().orthographic = true;
+                water.GetComponent<Water>().WaterAppear();
+                info.switchingtolevel2 = true;
+                window.GetComponent<Window>().WindowClose();
+                piano.GetComponent<Piano_perspective>().PianoClose();
+                StartCoroutine(MoveCameraAfterDelay());
             }
         }
+    }
+    private IEnumerator MoveCameraAfterDelay()
+    {
+        yield return new WaitForSeconds(10f);
+        GameObject camera = GameObject.Find("Main Camera");
+        camera.transform.SetPositionAndRotation(Constants.Constants.level_2_camera, Constants.Constants.level_2_camera_rotation);
+        camera.GetComponent<Camera>().orthographic = true;
+        info.in_childscene = false;
+        info.switchingtolevel2 = false;
     }
 }

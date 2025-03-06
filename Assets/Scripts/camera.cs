@@ -7,12 +7,13 @@ public class CameraRoomController : MonoBehaviour
     {
         info.current_scene_num = 1 ;
         transform.rotation = Quaternion.Euler(0f, 0f, 0f) ;
-        transform.position = new Vector3(0f, 0f, 0f) ;
+        transform.position = new Vector3(0f, 0f, 0f);
         GetComponent<Camera>().orthographic = true;
     }
 
     void Update()
     {
+        if(info.switchingtolevel2) return;
         if( Input.GetKeyDown(KeyCode.UpArrow) && info.current_scene_num != 5 && !info.in_childscene )
         {
             scene_before_up = info.current_scene_num ;
