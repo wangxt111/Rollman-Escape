@@ -10,7 +10,6 @@ public class Window : MonoBehaviour
     public Sprite[] anime;
     void Start()
     {
-        WindowClose();
         return;
     }
     void Update()
