@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Passwordkey : MonoBehaviour
+public class Passwordkey1 : MonoBehaviour
 {
+    public int scene = 1;
     public int passwordkeyID;
     Renderer passwordkeyrenderer;
     public Sprite newSprite; // 在Inspector中赋值为要切换的新图片
@@ -78,11 +79,24 @@ public class Passwordkey : MonoBehaviour
     }
     bool CheckPassword(){
         int l = info.currentpassword.Count;
-        int c = info.targetpassword.Count;
+        int c = 0;
+        if(scene == 1){
+            c = info.targetpassword1.Count;
+        }
+        else if(scene == 2){
+            c = info.targetpassword2.Count;
+        }
         if(l>=c){
             for(int i=1;i<=c;i++){
                 Debug.Log(info.currentpassword[l-i]);
-                if(info.currentpassword[l-i]!=info.targetpassword[c-i]){
+                int target = 0;
+                if(scene == 1){
+                    target = info.targetpassword1[c-i];
+                }
+                else if(scene == 2){
+                    target = info.targetpassword2[c-i];
+                }
+                if(info.currentpassword[l-i]!=target){
                     return false;
                 }
             }

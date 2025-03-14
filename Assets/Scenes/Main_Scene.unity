@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 4
   newSprite: {fileID: 21300000, guid: 24d98b4506dd9c14db110adc52e322fe, type: 3}
   switchDuration: 0.5
@@ -804,6 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 5
   newSprite: {fileID: 21300000, guid: 23aaa9f6be6cd0c4ea8597079a9216ad, type: 3}
   switchDuration: 0.5
@@ -874,6 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 3
   newSprite: {fileID: 21300000, guid: f18af985b62fc0e4a8c02e23ead071b7, type: 3}
   switchDuration: 0.5
@@ -1835,6 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 11
   newSprite: {fileID: 21300000, guid: efdc255ee09f83042822d033bd7ff03b, type: 3}
   switchDuration: 0.5
@@ -2480,6 +2484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 8
   newSprite: {fileID: 21300000, guid: 9f0c21fcf4943a54298f3817e0dc5d97, type: 3}
   switchDuration: 0.5
@@ -2571,6 +2576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 1
   newSprite: {fileID: 21300000, guid: af03f2bbc953f0c4d9934c2790127b7c, type: 3}
   switchDuration: 0.5
@@ -4241,6 +4247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 6
   newSprite: {fileID: 21300000, guid: 6b8a564feb26abf4783284778c771fbe, type: 3}
   switchDuration: 0.5
@@ -4672,6 +4679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 3
   newSprite: {fileID: 21300000, guid: c5ccfe9d09effb84598b79f6ddf9e59a, type: 3}
   switchDuration: 0.5
@@ -5115,6 +5123,9 @@ Transform:
   - {fileID: 704669378}
   - {fileID: 581608869}
   - {fileID: 869473116}
+  - {fileID: 789484354}
+  - {fileID: 2106800825}
+  - {fileID: 1989003613}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &687107868
@@ -5215,6 +5226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 0
   newSprite: {fileID: 21300000, guid: 66d9c6ebbea1dab40bcb61fbfc71a7ba, type: 3}
   switchDuration: 0.5
@@ -6658,6 +6670,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &789484353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789484354}
+  - component: {fileID: 789484355}
+  m_Layer: 0
+  m_Name: "\u5899\u4E0A\u523B\u7684\u8C1C\u9898"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789484354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789484353}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 679813746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &789484355
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789484353}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 2d03d94bd944df8429855976db0063f8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.199999, y: 14.802539}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &803899561
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,6 +6852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 11
   newSprite: {fileID: 21300000, guid: 087313aebd71643469d2c88147f1b05e, type: 3}
   switchDuration: 0.5
@@ -8277,6 +8374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 8
   newSprite: {fileID: 21300000, guid: bb54ee004f2ba594b84579c6d877e55a, type: 3}
   switchDuration: 0.5
@@ -8777,6 +8875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 9
   newSprite: {fileID: 21300000, guid: af0d64f1e24f33d42b487dd802c098de, type: 3}
   switchDuration: 0.5
@@ -9393,6 +9492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 4
   newSprite: {fileID: 21300000, guid: b928e2089e996df4f8071f6416cfd41d, type: 3}
   switchDuration: 0.5
@@ -10318,6 +10418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 0
   newSprite: {fileID: 21300000, guid: ef1820c5ef3b14d4b8ee42429c1babc8, type: 3}
   switchDuration: 0.5
@@ -10666,6 +10767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 9
   newSprite: {fileID: 21300000, guid: 539be299277747143ae3eac9eb6ccd41, type: 3}
   switchDuration: 0.5
@@ -12240,6 +12342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 2
   newSprite: {fileID: 21300000, guid: 184728aaac3ef044299e3d06f3460a41, type: 3}
   switchDuration: 0.5
@@ -12875,6 +12978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 10
   newSprite: {fileID: 21300000, guid: 48416ffb1e1e25d49a1bc41325acd39e, type: 3}
   switchDuration: 0.5
@@ -13120,6 +13224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 7
   newSprite: {fileID: 21300000, guid: 8692d7f7783b5b648b2ed2e6236769ac, type: 3}
   switchDuration: 0.5
@@ -13429,6 +13534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 1
   newSprite: {fileID: 21300000, guid: fd96f0d36a4abef4b91c622939980df8, type: 3}
   switchDuration: 0.5
@@ -13777,6 +13883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 10
   newSprite: {fileID: 21300000, guid: 1e98f761027f6434393e12a1b5e22910, type: 3}
   switchDuration: 0.5
@@ -14619,6 +14726,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1989003612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1989003613}
+  - component: {fileID: 1989003614}
+  m_Layer: 0
+  m_Name: "\u5730\u4E0A\u523B\u7684\u8C1C\u9898"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1989003613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989003612}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 679813746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1989003614
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989003612}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 524c5151ffe8d124ba1373de3aed5ef0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.199999, y: 14.802539}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1990453015
 GameObject:
   m_ObjectHideFlags: 0
@@ -15144,6 +15335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 7
   newSprite: {fileID: 21300000, guid: f3087f1bde5ff4e4ab27c292f6577088, type: 3}
   switchDuration: 0.5
@@ -15661,6 +15853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 6
   newSprite: {fileID: 21300000, guid: ff8d916fc0c60c64a889e6f3d19bac51, type: 3}
   switchDuration: 0.5
@@ -15727,6 +15920,90 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 52035ad552e3b94438b8eaec1301d211, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.199999, y: 14.802539}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2106800824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106800825}
+  - component: {fileID: 2106800826}
+  m_Layer: 0
+  m_Name: "\u5899\u4E0A\u523B\u7684\u8C1C\u98982"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2106800825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106800824}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 679813746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2106800826
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106800824}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e3b84afcf38cdb3458a46a65cdbfc561, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15835,6 +16112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   passwordkeyID: 5
   newSprite: {fileID: 21300000, guid: f6613d9db8f454c40a666d087d51fef3, type: 3}
   switchDuration: 0.5
@@ -15905,6 +16183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 2
   passwordkeyID: 2
   newSprite: {fileID: 21300000, guid: 701f034fa8a57d342a8d6c06c06dd8a7, type: 3}
   switchDuration: 0.5
