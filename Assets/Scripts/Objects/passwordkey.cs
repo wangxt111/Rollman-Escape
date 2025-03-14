@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Passwordkey1 : MonoBehaviour
+public class Passwordkey : MonoBehaviour
 {
     public int scene = 1;
     public int passwordkeyID;
