@@ -15,7 +15,7 @@ public static class info{
     public static List<int> currentsong = new List<int>();
     public static bool finishsong = false; //是否完成当前歌曲
     public static List<int> targetpassword1 = new List<int> {7,1,5};
-    public static List<int> targetpassword2 = new List<int> {1,2,3};
+    public static List<int> targetpassword2 = new List<int> {1,2,1,2};
     public static List<int> currentpassword = new List<int>();
     public static bool finishpassword = false; //是否完成密码输入
     public static int safe_box = 0; //0、1、2分别表示保险箱关闭、半开、全开
