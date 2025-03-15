@@ -8,8 +8,6 @@ using UnityEngine;
 public class Water_level2 : MonoBehaviour
 {
     public Sprite[] anime;
-
-    private float TargetY = 0f;
     public float speed = 1f;
     void Start()
     {
@@ -18,7 +16,7 @@ public class Water_level2 : MonoBehaviour
     }
     void Update()
     {
-        if(!info.switchingtolevel2 && transform.localPosition.y > TargetY) transform.Translate(Vector3.down * speed * Time.deltaTime);
+        if(!info.switchingtolevel2 && transform.localPosition.y > info.waterhight) transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
     public void WaterAppear(){
         StartCoroutine(WaitAndSwitchSpritesSequentially(anime));
