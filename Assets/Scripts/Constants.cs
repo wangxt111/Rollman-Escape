@@ -8,7 +8,7 @@ namespace Constants
     public class Constants
     {
         public static readonly Vector3Int level_1_camera = new Vector3Int(0, 0, 0);
-        public static readonly Vector3Int level_2_camera = new Vector3Int(100, 100, 0);
+        public static readonly Vector3Int level_2_camera = new Vector3Int(0, 100, 0);
         public static readonly Quaternion level_2_camera_rotation = Quaternion.Euler(0f, 0f, 0f);
         public const int buttonnumber = 20;
         public static readonly Color red = new Color32(209, 124, 65, 255);
