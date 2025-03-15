@@ -9,6 +9,7 @@ public class Water_level2 : MonoBehaviour
 {
     public Sprite[] anime;
     public float speed = 1f;
+    public GameObject[] objectdownwithwater;
     void Start()
     {
         WaterAppear();
@@ -16,7 +17,13 @@ public class Water_level2 : MonoBehaviour
     }
     void Update()
     {
-        if(!info.switchingtolevel2 && transform.localPosition.y > info.waterhight) transform.Translate(Vector3.down * speed * Time.deltaTime);
+        if(!info.switchingtolevel2 && transform.localPosition.y > info.waterhight){
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
+            foreach (GameObject obj in objectdownwithwater)
+            {
+                obj.transform.Translate(Vector3.down * speed * Time.deltaTime);
+            }
+        }
     }
     public void WaterAppear(){
         StartCoroutine(WaitAndSwitchSpritesSequentially(anime));

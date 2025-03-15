@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Drain : MonoBehaviour
 {
+    bool isout = false;
     void Start()
     {
         return;
@@ -28,10 +29,11 @@ public class Drain : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            if (!isout && hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 this.gameObject.transform.localPosition = new Vector3(1,0,0);
                 info.waterhight -= 0.33f;
+                isout = true;
             }
         }
     }
