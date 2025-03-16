@@ -42,10 +42,11 @@ public class Passwordkey : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 SwitchSprite();
-                if(info.finishpassword) return;
+                if( ( scene == 1 && info.finishpassword1 == true ) || ( scene == 2 && info.finishpassword2 == true ) ) return;
                 info.currentpassword.Add(passwordkeyID);
                 if(CheckPassword()){
-                    info.finishpassword = true;
+                    if( scene == 1 ) info.finishpassword1 = true;
+                    if( scene == 2 ) info.finishpassword2 = true;
                     Debug.Log("finishpassword");
                     info.currentpassword.Clear();
                 }

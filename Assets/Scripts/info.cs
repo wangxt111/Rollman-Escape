@@ -17,8 +17,10 @@ public static class info{
     public static List<int> targetpassword1 = new List<int> {7,1,5};
     public static List<int> targetpassword2 = new List<int> {1,2,1,2};
     public static List<int> currentpassword = new List<int>();
-    public static bool finishpassword = false; //是否完成密码输入
-    public static int safe_box = 0; //0、1、2分别表示保险箱关闭、半开、全开
+    public static bool finishpassword1 = false; //是否完成场景1密码输入
+    public static bool finishpassword2 = false; //是否完成场景2密码输入
+    public static int safe_box1 = 0; //0、1、2分别表示保险箱关闭、半开、全开
+    public static int safe_box2 = 0; //0、1、2分别表示保险箱关闭、半开、全开
     public static Color32 brush_color = Color.clear; //画笔颜色
     public static bool[] correctcolor = new bool[7];
     public static bool ink = false; //是否拿到墨水
