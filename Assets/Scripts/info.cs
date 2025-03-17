@@ -35,4 +35,7 @@ public static class info{
     public static bool debug = true; //为true时直接到录取通知书（通过manual_object.cs）
     public static bool switchingtolevel2 = false; //是否正在切换到level2
     public static float waterhight = 0f; //水的高度
+
+    public static float timeRemaining = 60f; // 第二关倒计时时间（秒）
+    public static bool timerIsRunning = false;
 }

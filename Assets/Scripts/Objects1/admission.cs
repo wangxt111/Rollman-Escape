@@ -55,5 +55,6 @@ public class Addmission : MonoBehaviour
         camera.GetComponent<Camera>().orthographic = true;
         info.in_childscene = false;
         info.switchingtolevel2 = false;
+        info.timerIsRunning = true;
     }
 }

@@ -26,7 +26,8 @@ public class Drain : MonoBehaviour
         RaycastHit hit;
 
         // 射线检测，增加距离参数以确保足够的检测范围
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        int layerMask = ~LayerMask.GetMask("UI"); // 忽略UI层
+        if (Physics.Raycast(ray, out hit, 100f, layerMask))
         {
             // 如果射线击中了当前物体
             if (!isout && hit.collider != null && hit.collider.gameObject == this.gameObject)

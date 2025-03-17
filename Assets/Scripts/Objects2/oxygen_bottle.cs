@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class Leak : MonoBehaviour
+public class Oxygen_Bottle : MonoBehaviour
 {
-    SpriteRenderer objectrenderer;
-    int count = 0; //被砸的次数
-    public GameObject[] targetobject;
-    public Sprite[] Image;
+    public Sprite image;
     void Start()
     {
-        objectrenderer = GetComponent<SpriteRenderer>();
         return;
     }
     void Update()
@@ -37,18 +32,13 @@ public class Leak : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                if(targetobject.Contains(info.currentobject)){
-                    Utils.ClearTableButton(info.currentindex);
-                    count ++;
-                    if(count == 1){
-                        objectrenderer.enabled = true; // 显示物体
-                        info.waterhight -= 0.33f;
-                    }else if(count == 2){
-                        objectrenderer.sprite = Image[0];
-                        info.waterhight -= 0.33f;
-                    }else if(count == 3){
-                        objectrenderer.sprite = Image[1];
-                    }
+                GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
+                if (freebutton != null)
+                {
+                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
+                    freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
+                    info.timeRemaining += 30f;
+                    this.gameObject.SetActive(false);
                 }
             }
         }
