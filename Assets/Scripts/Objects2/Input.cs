@@ -9,13 +9,13 @@ public class CheckInput : MonoBehaviour
 
     void Start()
     {
-        inputField.gameObject.SetActive(info.level2);
+        inputField.gameObject.SetActive(info.input_box);
         inputField.onEndEdit.AddListener(SubmitInput);
     }
 
     void Update()
     {
-        inputField.gameObject.SetActive(info.level2&&(!info.puzzles[type]));
+        inputField.gameObject.SetActive(info.input_box&&(!info.puzzles[type]));
     }
 
     void SubmitInput(string userInput)

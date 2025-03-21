@@ -5,6 +5,7 @@ using UnityEngine;
 //存储全局信息
 
 public static class info{
+    public static int level = 1;
     public static GameObject currentobject = null; //当前选中的物体(背包中)
 
     public static int currentindex = -1; //当前选中的物体在背包中的位置
@@ -36,7 +37,7 @@ public static class info{
     public static bool switchingtolevel2 = false; //是否正在切换到level2
     public static float waterhight = 0f; //水的高度
 
-    public static bool level2 = false;
+    public static bool input_box = false; // 第二关输入框是否显示
     public static float timeRemaining = 60f; // 第二关倒计时时间（秒）
     public static bool timerIsRunning = false;
     public static bool[] puzzles = new bool[3];

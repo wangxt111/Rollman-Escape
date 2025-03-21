@@ -56,6 +56,7 @@ public class Addmission : MonoBehaviour
         info.in_childscene = false;
         info.switchingtolevel2 = false;
         info.timerIsRunning = true;
-        info.level2 = true;
+        info.level = 2;
+        info.input_box = true;
     }
 }

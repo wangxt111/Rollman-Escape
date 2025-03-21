@@ -439,7 +439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 4
   newSprite: {fileID: 21300000, guid: 24d98b4506dd9c14db110adc52e322fe, type: 3}
   switchDuration: 0.5
@@ -1182,7 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 5
   newSprite: {fileID: 21300000, guid: 23aaa9f6be6cd0c4ea8597079a9216ad, type: 3}
   switchDuration: 0.5
@@ -1253,7 +1251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 3
   newSprite: {fileID: 21300000, guid: f18af985b62fc0e4a8c02e23ead071b7, type: 3}
   switchDuration: 0.5
@@ -1954,7 +1951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e071eeb7decfeb4d983252ce12df425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   newSprite: {fileID: 21300000, guid: 8eadabcae1d192347b99510ad4f14bc3, type: 3}
 --- !u!65 &172940029
 BoxCollider:
@@ -2216,7 +2212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 11
   newSprite: {fileID: 21300000, guid: efdc255ee09f83042822d033bd7ff03b, type: 3}
   switchDuration: 0.5
@@ -3017,7 +3012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 8
   newSprite: {fileID: 21300000, guid: 9f0c21fcf4943a54298f3817e0dc5d97, type: 3}
   switchDuration: 0.5
@@ -3109,7 +3103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 1
   newSprite: {fileID: 21300000, guid: af03f2bbc953f0c4d9934c2790127b7c, type: 3}
   switchDuration: 0.5
@@ -3165,6 +3158,126 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &319792078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319792079}
+  - component: {fileID: 319792080}
+  - component: {fileID: 319792082}
+  - component: {fileID: 319792081}
+  m_Layer: 0
+  m_Name: "\u6C27\u6C14\u74F6 \u5BC6\u7801\u7BB1\u4E2D"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319792079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319792078}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1034984887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &319792080
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319792078}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: db3d36a0ff72e9742a739764078debe8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.199999, y: 14.802539}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &319792081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319792078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e00b4c4a8c4b5498be9d086169514d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 9deb1f24a0d3b2b47ba8b34f132b0353, type: 3}
+--- !u!65 &319792082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319792078}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.76445997, y: 2.8378105, z: 0}
+  m_Center: {x: -6.484226, y: -1.4205837, z: 0}
 --- !u!1 &336910188
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,7 +5318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 6
   newSprite: {fileID: 21300000, guid: 6b8a564feb26abf4783284778c771fbe, type: 3}
   switchDuration: 0.5
@@ -5878,7 +5990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 3
   newSprite: {fileID: 21300000, guid: c5ccfe9d09effb84598b79f6ddf9e59a, type: 3}
   switchDuration: 0.5
@@ -6575,7 +6686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 0
   newSprite: {fileID: 21300000, guid: 66d9c6ebbea1dab40bcb61fbfc71a7ba, type: 3}
   switchDuration: 0.5
@@ -8336,7 +8446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 11
   newSprite: {fileID: 21300000, guid: 087313aebd71643469d2c88147f1b05e, type: 3}
   switchDuration: 0.5
@@ -9974,7 +10083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 8
   newSprite: {fileID: 21300000, guid: bb54ee004f2ba594b84579c6d877e55a, type: 3}
   switchDuration: 0.5
@@ -10392,6 +10500,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2054576390}
+  - {fileID: 319792079}
   m_Father: {fileID: 679813746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1034984888
@@ -10458,7 +10567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12cc0e5d944e3564590d798ca430457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   CameraPositionAfterClick: {x: 0, y: 132, z: 0}
   safebox_open: {fileID: 21300000, guid: 111910581adf7954cb68d898ff089943, type: 3}
 --- !u!65 &1034984890
@@ -10733,7 +10841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 9
   newSprite: {fileID: 21300000, guid: af0d64f1e24f33d42b487dd802c098de, type: 3}
   switchDuration: 0.5
@@ -11484,7 +11591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 4
   newSprite: {fileID: 21300000, guid: b928e2089e996df4f8071f6416cfd41d, type: 3}
   switchDuration: 0.5
@@ -12620,7 +12726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 0
   newSprite: {fileID: 21300000, guid: ef1820c5ef3b14d4b8ee42429c1babc8, type: 3}
   switchDuration: 0.5
@@ -13153,7 +13258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 9
   newSprite: {fileID: 21300000, guid: 539be299277747143ae3eac9eb6ccd41, type: 3}
   switchDuration: 0.5
@@ -13954,7 +14058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12cc0e5d944e3564590d798ca430457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   CameraPositionAfterClick: {x: 0, y: 32, z: 0}
   safebox_open: {fileID: 21300000, guid: e3ac653cfceb8dc4aa3e8c6e4f703d51, type: 3}
 --- !u!65 &1500936613
@@ -15042,7 +15145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 2
   newSprite: {fileID: 21300000, guid: 184728aaac3ef044299e3d06f3460a41, type: 3}
   switchDuration: 0.5
@@ -15678,7 +15780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 10
   newSprite: {fileID: 21300000, guid: 48416ffb1e1e25d49a1bc41325acd39e, type: 3}
   switchDuration: 0.5
@@ -16099,7 +16200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 7
   newSprite: {fileID: 21300000, guid: 8692d7f7783b5b648b2ed2e6236769ac, type: 3}
   switchDuration: 0.5
@@ -16322,7 +16422,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e071eeb7decfeb4d983252ce12df425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   newSprite: {fileID: 21300000, guid: 4b6a04dd93fcd2f468ea3297e22db498, type: 3}
 --- !u!65 &1782021783
 BoxCollider:
@@ -16530,7 +16629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 1
   newSprite: {fileID: 21300000, guid: fd96f0d36a4abef4b91c622939980df8, type: 3}
   switchDuration: 0.5
@@ -17000,7 +17098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 10
   newSprite: {fileID: 21300000, guid: 1e98f761027f6434393e12a1b5e22910, type: 3}
   switchDuration: 0.5
@@ -18925,7 +19022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 7
   newSprite: {fileID: 21300000, guid: f3087f1bde5ff4e4ab27c292f6577088, type: 3}
   switchDuration: 0.5
@@ -19342,8 +19438,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.3865745, y: 2.7185216, z: 0}
-  m_Center: {x: -5.6688957, y: -1.4464041, z: 0}
+  m_Size: {x: 1.6479629, y: 2.7185223, z: 0}
+  m_Center: {x: -5.218861, y: -1.4464043, z: 0}
 --- !u!1 &2058988538
 GameObject:
   m_ObjectHideFlags: 0
@@ -19738,7 +19834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 6
   newSprite: {fileID: 21300000, guid: ff8d916fc0c60c64a889e6f3d19bac51, type: 3}
   switchDuration: 0.5
@@ -20011,7 +20106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   passwordkeyID: 5
   newSprite: {fileID: 21300000, guid: f6613d9db8f454c40a666d087d51fef3, type: 3}
   switchDuration: 0.5
@@ -20082,7 +20176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05b2f51d55e314eacd9df51bab6c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
   passwordkeyID: 2
   newSprite: {fileID: 21300000, guid: 701f034fa8a57d342a8d6c06c06dd8a7, type: 3}
   switchDuration: 0.5

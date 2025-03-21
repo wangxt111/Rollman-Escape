@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Passwordkey : MonoBehaviour
 {
-    public int scene = 1;
     public int passwordkeyID;
     Renderer passwordkeyrenderer;
     public Sprite newSprite; // 在Inspector中赋值为要切换的新图片
@@ -42,11 +41,11 @@ public class Passwordkey : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 SwitchSprite();
-                if( ( scene == 1 && info.finishpassword1 == true ) || ( scene == 2 && info.finishpassword2 == true ) ) return;
+                if( ( info.level == 1 && info.finishpassword1 == true ) || ( info.level == 2 && info.finishpassword2 == true ) ) return;
                 info.currentpassword.Add(passwordkeyID);
                 if(CheckPassword()){
-                    if( scene == 1 ) info.finishpassword1 = true;
-                    if( scene == 2 ) info.finishpassword2 = true;
+                    if( info.level == 1 ) info.finishpassword1 = true;
+                    if( info.level == 2 ) info.finishpassword2 = true;
                     Debug.Log("finishpassword");
                     info.currentpassword.Clear();
                 }
@@ -81,23 +80,28 @@ public class Passwordkey : MonoBehaviour
     bool CheckPassword(){
         int l = info.currentpassword.Count;
         int c = 0;
-        if(scene == 1){
+        if(info.level == 1)
+        {
             c = info.targetpassword1.Count;
         }
-        else if(scene == 2){
+        else if(info.level == 2)
+        {
             c = info.targetpassword2.Count;
         }
         if(l>=c){
             for(int i=1;i<=c;i++){
                 Debug.Log(info.currentpassword[l-i]);
                 int target = 0;
-                if(scene == 1){
+                if(info.level == 1)
+                {
                     target = info.targetpassword1[c-i];
                 }
-                else if(scene == 2){
+                else if(info.level == 2)
+                {
                     target = info.targetpassword2[c-i];
                 }
-                if(info.currentpassword[l-i]!=target){
+                if(info.currentpassword[l-i]!=target)
+                {
                     return false;
                 }
             }

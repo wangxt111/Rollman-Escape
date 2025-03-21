@@ -11,6 +11,7 @@ public class Manual_Floor : MonoBehaviour
     public Vector3 start;  // Start位置
     public Vector3 end;    // End位置
     private bool isFalling = false;  // 判断物体是否正在下落
+    private bool hasStartedWait = false;
 
     void Start()
     {
@@ -27,12 +28,10 @@ public class Manual_Floor : MonoBehaviour
     {
         if (info.manual == 0) return;
 
-        if (info.manual == 1)
+        if (info.manual == 1 && !hasStartedWait)
         {
-            manual_renderer.enabled = true;
-            manual_collider.enabled = true;
-            transform.localPosition = start;
-            info.manual = 2;
+            hasStartedWait = true;
+            StartCoroutine(Wait());
         }
         if (info.manual == 2 && !isFalling)
         {
@@ -107,4 +106,12 @@ public class Manual_Floor : MonoBehaviour
         isFalling = false;
     }
 
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.9f);
+        manual_renderer.enabled = true;
+        manual_collider.enabled = true;
+        transform.localPosition = start;
+        info.manual = 2;
+    }
 }

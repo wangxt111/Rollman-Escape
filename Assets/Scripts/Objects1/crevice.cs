@@ -13,8 +13,19 @@ public class Crevice : MonoBehaviour
 
     void Update()
     {
+        if (info.horizontal_bar == 2)
+        {
+            StartCoroutine(WaitAndSwitchSprites(newSprites[0]));
+        }
+        if (info.horizontal_bar == 3)
+        {
+            StartCoroutine(WaitAndSwitchSprites(newSprites[1]));
+        }
+    }
+    private IEnumerator WaitAndSwitchSprites(Sprite sprite)
+    {
+        yield return new WaitForSeconds(0.9f);
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        if (info.horizontal_bar == 2) spriteRenderer.sprite = newSprites[0];
-        if (info.horizontal_bar == 3) spriteRenderer.sprite = newSprites[1];
+        spriteRenderer.sprite = sprite;
     }
 }

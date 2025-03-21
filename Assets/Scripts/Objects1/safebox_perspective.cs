@@ -5,13 +5,14 @@ using UnityEngine;
 // 切换到放大的保险箱场景
 public class Safebox_perspective_close : MonoBehaviour
 {
-    public int scene = 1;
     public Vector3 CameraPositionAfterClick = new Vector3(0, 32, 0);
     public Sprite safebox_open;
     private Renderer[] childRenderers;
+    private Collider[] childColliders;
     void Start()
     {
         childRenderers = GetComponentsInChildren<Renderer>(true);
+        childColliders = GetComponentsInChildren<Collider>(true);
         foreach (Renderer renderer in childRenderers)
         {
             if (renderer.gameObject != this.gameObject)
@@ -19,11 +20,18 @@ public class Safebox_perspective_close : MonoBehaviour
                 renderer.enabled = false;
             }
         }
+        foreach (Collider collider in childColliders)
+        {
+            if (collider.gameObject != this.gameObject)
+            {
+                collider.enabled = false;
+            }
+        }
         return;
     }
     void Update()
     {
-        if( ( scene == 1 && info.safe_box1 == 2 ) || ( scene == 2 && info.safe_box2 == 2 ) )
+        if( ( info.level == 1 && info.safe_box1 == 2 ) || ( info.level == 2 && info.safe_box2 == 2 ) )
         {
             Collider collider = GetComponent<Collider>();
             collider.enabled = false;
@@ -33,6 +41,13 @@ public class Safebox_perspective_close : MonoBehaviour
             foreach (Renderer renderer in childRenderers)
             {
                 renderer.enabled = true;
+            }
+            foreach (Collider colliderer in childColliders)
+            {
+                if (colliderer.gameObject != this.gameObject)
+                {
+                    colliderer.enabled = true;
+                }
             }
             return;
         }
@@ -53,8 +68,9 @@ public class Safebox_perspective_close : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( scene == 1 && info.safe_box1 != 2 ) || ( scene == 2 && info.safe_box2 != 2 ) ) )
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 ) || ( info.level == 2 && info.safe_box2 != 2 ) ) )
             {
+                if( info.level == 2 ) info.input_box = false;
                 Utils.MoveCamera(CameraPositionAfterClick,true);
             }
         }
