@@ -4333,6 +4333,7 @@ GameObject:
   - component: {fileID: 501990653}
   - component: {fileID: 501990654}
   - component: {fileID: 501990655}
+  - component: {fileID: 501990656}
   m_Layer: 0
   m_Name: "\u5899\u4E0A\u523B\u7684\u8C1C\u98982 \u6C27\u6C14\u74F6"
   m_TagString: Untagged
@@ -4428,6 +4429,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0961959, y: 0.6358719, z: 0}
   m_Center: {x: -0.2701484, y: -2.8421497, z: 0}
+--- !u!114 &501990656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501990652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e00b4c4a8c4b5498be9d086169514d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 9deb1f24a0d3b2b47ba8b34f132b0353, type: 3}
 --- !u!1 &536152456
 GameObject:
   m_ObjectHideFlags: 0
