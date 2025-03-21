@@ -15,7 +15,7 @@ public static class info{
     public static List<int> currentsong = new List<int>();
     public static bool finishsong = false; //是否完成当前歌曲
     public static List<int> targetpassword1 = new List<int> {7,1,5};
-    public static List<int> targetpassword2 = new List<int> {1,2,1,2};
+    public static List<int> targetpassword2 = new List<int> {6,2,1,2};
     public static List<int> currentpassword = new List<int>();
     public static bool finishpassword1 = false; //是否完成场景1密码输入
     public static bool finishpassword2 = false; //是否完成场景2密码输入
@@ -36,6 +36,8 @@ public static class info{
     public static bool switchingtolevel2 = false; //是否正在切换到level2
     public static float waterhight = 0f; //水的高度
 
+    public static bool level2 = false;
     public static float timeRemaining = 60f; // 第二关倒计时时间（秒）
     public static bool timerIsRunning = false;
+    public static bool[] puzzles = new bool[3];
 }
