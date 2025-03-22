@@ -9,8 +9,14 @@ public class CheckInput : MonoBehaviour
 
     void Start()
     {
+        if (inputField.placeholder != null)
+        {
+            inputField.placeholder.gameObject.SetActive(false); // 隐藏占位符
+        }
         inputField.gameObject.SetActive(info.input_box);
         inputField.onEndEdit.AddListener(SubmitInput);
+        TMP_Text textComponent = inputField.textComponent;
+        textComponent.alignment = TextAlignmentOptions.Center;
     }
 
     void Update()
