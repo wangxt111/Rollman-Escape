@@ -4125,6 +4125,7 @@ GameObject:
   - component: {fileID: 425526454}
   - component: {fileID: 425526455}
   - component: {fileID: 425526456}
+  - component: {fileID: 425526457}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -4214,6 +4215,31 @@ MonoBehaviour:
   flashlight: {fileID: 1861649058}
   moveSpeed: 5
   targetObject: {fileID: 679813744}
+  targetObjects:
+  - {fileID: 2106800824}
+  - {fileID: 789484353}
+  - {fileID: 1989003612}
+--- !u!65 &425526457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425526453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.67886585, y: 0.7151659, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &460440814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8261,6 +8287,7 @@ GameObject:
   - component: {fileID: 789484354}
   - component: {fileID: 789484355}
   - component: {fileID: 789484356}
+  - component: {fileID: 789484357}
   m_Layer: 0
   m_Name: "\u5899\u4E0A\u523B\u7684\u8C1C\u9898"
   m_TagString: Untagged
@@ -8348,6 +8375,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 1
+--- !u!65 &789484357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789484353}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4569976, y: 1.5603828, z: 0}
+  m_Center: {x: -6.8499546, y: 2.528801, z: 0}
 --- !u!1 &803899561
 GameObject:
   m_ObjectHideFlags: 0
@@ -18410,6 +18458,7 @@ GameObject:
   - component: {fileID: 1989003613}
   - component: {fileID: 1989003614}
   - component: {fileID: 1989003615}
+  - component: {fileID: 1989003616}
   m_Layer: 0
   m_Name: "\u5730\u4E0A\u523B\u7684\u8C1C\u9898"
   m_TagString: Untagged
@@ -18497,6 +18546,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 0
+--- !u!65 &1989003616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989003612}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6061082, y: 1.4216137, z: 0}
+  m_Center: {x: -5.221572, y: -5.3335524, z: 0}
 --- !u!1 &1990453015
 GameObject:
   m_ObjectHideFlags: 0
@@ -19921,6 +19991,7 @@ GameObject:
   - component: {fileID: 2106800825}
   - component: {fileID: 2106800826}
   - component: {fileID: 2106800827}
+  - component: {fileID: 2106800828}
   m_Layer: 0
   m_Name: "\u5899\u4E0A\u523B\u7684\u8C1C\u98982"
   m_TagString: Untagged
@@ -20008,6 +20079,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 2
+--- !u!65 &2106800828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106800824}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7244496, y: 0.6312275, z: 0}
+  m_Center: {x: -0.11845335, y: -2.664132, z: 0}
 --- !u!1 &2110333418
 GameObject:
   m_ObjectHideFlags: 0

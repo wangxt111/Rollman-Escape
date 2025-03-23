@@ -9,6 +9,9 @@ public class Light : MonoBehaviour
     // 定义目标物体引用
     public GameObject targetObject;
 
+    public GameObject[] targetObjects; // 目标物体列表
+    private float detectionRadius = 1f; // 检测半径
+
     void Update()
     {
         if (info.currentobject==flashlight && Input.GetMouseButtonDown(0))
@@ -48,6 +51,54 @@ public class Light : MonoBehaviour
             else
             {
                 hasTarget = false;
+            }
+        }
+
+        if(!GetComponent<SpriteRenderer>().enabled){
+            foreach (GameObject target in targetObjects){
+                target.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            return;
+        }
+
+        // 以当前物体的位置为中心，在指定半径内进行球形检测
+        Collider[] collidersInRange = Physics.OverlapSphere(transform.position, detectionRadius);
+
+        foreach (Collider collider in collidersInRange)
+        {
+            foreach (GameObject target in targetObjects)
+            {
+                if (target == collider.gameObject)
+                {
+                    SpriteRenderer targetSpriteRenderer = collider.GetComponent<SpriteRenderer>();
+                    if (targetSpriteRenderer != null)
+                    {
+                        targetSpriteRenderer.color = Color.red;
+                    }
+                    break;
+                }
+            }
+        }
+
+        // 检查是否有之前被染色的物体离开了检测范围，将其颜色恢复为白色
+        foreach (GameObject target in targetObjects)
+        {
+            bool isInRange = false;
+            foreach (Collider collider in collidersInRange)
+            {
+                if (target == collider.gameObject)
+                {
+                    isInRange = true;
+                    break;
+                }
+            }
+            if (!isInRange)
+            {
+                SpriteRenderer targetSpriteRenderer = target.GetComponent<SpriteRenderer>();
+                if (targetSpriteRenderer != null)
+                {
+                    targetSpriteRenderer.color = Color.white;
+                }
             }
         }
     }
