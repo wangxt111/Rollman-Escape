@@ -19,7 +19,11 @@ public static class Utils{
         camera.transform.position = CameraPostionBeforeMovement;
         camera.GetComponent<Camera>().orthographic = true;
         info.in_childscene = false;
-        if( info.level == 2 ) info.input_box = true;
+        if( info.level == 2 )
+        {
+            info.input_box = true;
+            info.waterlevel2 = true;
+        }
     }
     public static void ClearTableButton(int index){ //从tablebutton上移除物体，同时清空info中信息
         GameObject targetbutton = GameObject.FindGameObjectWithTag("button"+index);

@@ -41,4 +41,5 @@ public static class info{
     public static float timeRemaining = 60f; // 第二关倒计时时间（秒）
     public static bool timerIsRunning = false;
     public static bool[] puzzles = new bool[3];
+    public static bool waterlevel2 = true;
 }

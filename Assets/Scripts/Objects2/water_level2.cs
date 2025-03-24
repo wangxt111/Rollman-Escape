@@ -17,6 +17,17 @@ public class Water_level2 : MonoBehaviour
     }
     void Update()
     {
+        if( info.waterlevel2 == false )
+        {
+            Renderer Renderer = GetComponent<Renderer>();
+            Renderer.enabled = false;
+            return;
+        }
+        else
+        {
+            Renderer Renderer = GetComponent<Renderer>();
+            Renderer.enabled = true;
+        }
         if(!info.switchingtolevel2 && transform.localPosition.y > info.waterhight){
             transform.Translate(Vector3.down * speed * Time.deltaTime);
             foreach (GameObject obj in objectdownwithwater)
