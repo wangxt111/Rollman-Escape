@@ -8375,6 +8375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 1
+  CameraPositionAfterClick: {x: -5.5, y: 102, z: 8}
 --- !u!65 &789484357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8394,8 +8395,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.4569976, y: 1.5603828, z: 0}
-  m_Center: {x: -6.8499546, y: 2.528801, z: 0}
+  m_Size: {x: 2.4569976, y: 1.4697456, z: 0}
+  m_Center: {x: -6.8499546, y: 2.5741196, z: 0}
 --- !u!1 &803899561
 GameObject:
   m_ObjectHideFlags: 0
@@ -18546,6 +18547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 0
+  CameraPositionAfterClick: {x: -4, y: 96, z: 8}
 --- !u!65 &1989003616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20079,6 +20081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle_num: 2
+  CameraPositionAfterClick: {x: 0, y: 98, z: 8}
 --- !u!65 &2106800828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20098,8 +20101,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7244496, y: 0.6312275, z: 0}
-  m_Center: {x: -0.11845335, y: -2.664132, z: 0}
+  m_Size: {x: 1.5190114, y: 0.59031487, z: 0}
+  m_Center: {x: -0.10149859, y: -2.6640844, z: 0}
 --- !u!1 &2110333418
 GameObject:
   m_ObjectHideFlags: 0
