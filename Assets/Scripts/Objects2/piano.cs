@@ -9,6 +9,7 @@ public class Piano : MonoBehaviour
     private bool isSwitching = false;
     public GameObject targetobject;
     private Renderer[] childRenderers;
+    public GameObject hammer;
     void Start()
     {
         childRenderers = GetComponentsInChildren<Renderer>(true);
@@ -42,6 +43,8 @@ public class Piano : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject && info.currentobject == targetobject)
             {
                 SwitchToNextSprite(); // 切换到下一个Sprite
+                hammer.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                hammer.GetComponent<Hammer>().Drop();
             }
         }
     }

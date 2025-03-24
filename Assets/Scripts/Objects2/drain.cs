@@ -33,7 +33,7 @@ public class Drain : MonoBehaviour
             if (!isout && hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 this.gameObject.transform.localPosition = new Vector3(1,0,0);
-                info.waterhight -= 0.33f;
+                info.waterhight -= 0.6f;
                 isout = true;
             }
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Leak : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class Leak : MonoBehaviour
     int count = 0; //被砸的次数
     public GameObject[] targetobject;
     public Sprite[] Image;
+    public GameObject Hammer;
+    private bool almostbreak = false;
+    public GameObject window1;
+    public GameObject window2;
+    public GameObject breakwindow;
     void Start()
     {
         objectrenderer = GetComponent<SpriteRenderer>();
@@ -42,12 +48,22 @@ public class Leak : MonoBehaviour
                     count ++;
                     if(count == 1){
                         objectrenderer.enabled = true; // 显示物体
-                        info.waterhight -= 0.33f;
+                        info.waterhight -= 1f;
                     }else if(count == 2){
                         objectrenderer.sprite = Image[0];
-                        info.waterhight -= 0.33f;
-                    }else if(count == 3){
+                        info.waterhight -= 1f;
+                    }
+                }else if(info.currentobject == Hammer){
+                    if(!almostbreak){
+                        info.waterhight -= 0.6f;
+                        almostbreak = true;
                         objectrenderer.sprite = Image[1];
+                    }else{
+                        window1.GetComponent<SpriteRenderer>().enabled = false;
+                        window2.GetComponent<SpriteRenderer>().enabled = false;
+                        objectrenderer.enabled = false;
+                        breakwindow.GetComponent<SpriteRenderer>().enabled = true;
+                        info.waterhight = -9f;
                     }
                 }
             }
