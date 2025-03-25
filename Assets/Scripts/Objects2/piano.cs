@@ -9,10 +9,12 @@ public class Piano : MonoBehaviour
     private bool isSwitching = false;
     public GameObject targetobject;
     private Renderer[] childRenderers;
+    private Collider[] childColliders;
     public GameObject hammer;
     void Start()
     {
         childRenderers = GetComponentsInChildren<Renderer>(true);
+        childColliders = GetComponentsInChildren<Collider>(true);
         foreach (Renderer renderer in childRenderers)
         {
             if (renderer.gameObject != this.gameObject)
@@ -20,6 +22,14 @@ public class Piano : MonoBehaviour
                 renderer.enabled = false;
             }
         }
+        foreach (Collider collider in childColliders)
+        {
+            if (collider.gameObject != this.gameObject)
+            {
+                collider.enabled = false;
+            }
+        }
+        return;
     }
 
     void Update()
@@ -54,6 +64,7 @@ public class Piano : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = newSprites;
         childRenderers = GetComponentsInChildren<Renderer>(true);
+        childColliders = GetComponentsInChildren<Collider>(true);
         foreach (Renderer renderer in childRenderers)
         {
             renderer.enabled = true;

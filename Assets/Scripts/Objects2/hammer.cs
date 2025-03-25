@@ -78,5 +78,6 @@ public class Hammer : MonoBehaviour
         }
 
         transform.localPosition = targetPosition;
+        GetComponent<Collider>().enabled = true;
     }
 }
