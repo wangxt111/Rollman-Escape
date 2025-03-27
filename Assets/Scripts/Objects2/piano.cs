@@ -50,7 +50,7 @@ public class Piano : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject && info.currentobject == targetobject)
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject && info.currentobject == targetobject && info.waterhight < -2.5f)
             {
                 SwitchToNextSprite(); // 切换到下一个Sprite
                 hammer.GetComponent<SpriteRenderer>().sortingOrder = 5;
