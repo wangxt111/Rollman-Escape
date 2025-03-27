@@ -32,14 +32,9 @@ public class Oxygen_Bottle : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
-                if (freebutton != null)
-                {
-                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
-                    freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
-                    info.timeRemaining += 30f;
-                    this.gameObject.SetActive(false);
-                }
+                
+                info.timeRemaining += 30f;
+                this.gameObject.SetActive(false);
             }
         }
     }
