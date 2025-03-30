@@ -40,6 +40,13 @@ public static class info{
     public static bool input_box = false; // 第二关输入框是否显示
     public static float timeRemaining = 60f; // 第二关倒计时时间（秒）
     public static bool timerIsRunning = false;
+    public static int puzzle_num = 0; // 当前放大的键盘编号
     public static bool[] puzzles = new bool[3];
+    public static List<int>[] puzzles_answer = new List<int>[]
+    {
+        new List<int> {1, 9},
+        new List<int> {2},
+        new List<int> {9}
+    };
     public static bool waterlevel2 = true;
 }

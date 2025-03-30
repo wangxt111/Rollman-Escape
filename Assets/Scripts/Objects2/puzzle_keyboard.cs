@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-public class Puzzle : MonoBehaviour
+// 切换到放大的保险箱场景
+public class Puzzle_Keyboard : MonoBehaviour
 {
     public int num;
-    public Vector3 CameraPositionAfterClick = new Vector3(-5.5f, 102f, 8f);
+    public Vector3 CameraPositionAfterClick = new Vector3(0, 148, 0);
     void Start()
     {
         return;
@@ -24,6 +25,7 @@ public class Puzzle : MonoBehaviour
             HandleMouseClick();
         }
     }
+
     private void HandleMouseClick()
     {
         // 通过摄像机将屏幕坐标转换为射线
@@ -34,14 +36,10 @@ public class Puzzle : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 ) || ( info.level == 2 && info.safe_box2 != 2 ) ) )
             {
-                if(!info.in_childscene)
-                {
-                    info.input_box = false;
-                    info.waterlevel2 = false;
-                    Utils.MoveCamera(CameraPositionAfterClick,false);
-                }
+                info.puzzle_num = num;
+                Utils.MoveCamera(CameraPositionAfterClick,true);
             }
         }
     }
