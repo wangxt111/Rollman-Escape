@@ -16,6 +16,7 @@ public class Leak : MonoBehaviour
     public GameObject window1;
     public GameObject window2;
     public GameObject breakwindow;
+    public GameObject water;
     void Start()
     {
         objectrenderer = GetComponent<SpriteRenderer>();
@@ -43,6 +44,10 @@ public class Leak : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
+                if(water.transform.localPosition.y < -8.5f){
+                    GameObject camera = GameObject.Find("Main Camera");
+                    camera.transform.position = Constants.Constants.level_3_camera;
+                }
                 if(targetobject.Contains(info.currentobject)){
                     Utils.ClearTableButton(info.currentindex);
                     count ++;

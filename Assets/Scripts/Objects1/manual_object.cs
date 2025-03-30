@@ -16,11 +16,6 @@ public class Manual_Object  : MonoBehaviour
         if(!isfinished){
             objectrenderer.enabled = false;
         }
-        // //为便于调试
-        if(info.debug){
-            GameObject camera = GameObject.Find("Main Camera");
-            camera.transform.SetPositionAndRotation(new Vector3(0f,64f,0f), Quaternion.Euler(0f, -90f, 0f));
-        }
         return;
     }
     void Update()

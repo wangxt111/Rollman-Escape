@@ -49,7 +49,7 @@ public class Addmission : MonoBehaviour
     }
     private IEnumerator MoveCameraAfterDelay()
     {
-        yield return new WaitForSeconds(info.debug?1f:10f);
+        yield return new WaitForSeconds(7f);
         GameObject camera = GameObject.Find("Main Camera");
         camera.transform.SetPositionAndRotation(Constants.Constants.level_2_camera, Constants.Constants.level_2_camera_rotation);
         camera.GetComponent<Camera>().orthographic = true;

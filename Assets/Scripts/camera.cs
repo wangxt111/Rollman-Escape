@@ -8,7 +8,13 @@ public class CameraRoomController : MonoBehaviour
         info.current_scene_num = 1 ;
         transform.rotation = Quaternion.Euler(0f, 0f, 0f) ;
         transform.position = new Vector3(0f, 0f, 0f);
-        GetComponent<Camera>().orthographic = true;
+        GetComponent<Camera>().orthographic = true;// //为便于调试
+        if(info.debuglevel == 2){
+            transform.SetPositionAndRotation(new Vector3(0f,64f,0f), Quaternion.Euler(0f, -90f, 0f));
+        }else if(info.debuglevel == 3){
+            transform.position = Constants.Constants.level_3_camera;
+        }
+
     }
 
     void Update()
