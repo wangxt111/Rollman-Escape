@@ -39,7 +39,7 @@ public class Puzzle_Keyboard : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 ) || ( info.level == 2 && info.safe_box2 != 2 ) ) )
             {
                 info.puzzle_num = num;
-                Utils.MoveCamera(CameraPositionAfterClick,true);
+                Utils.MoveCamera(CameraPositionAfterClick,true,true);
             }
         }
     }

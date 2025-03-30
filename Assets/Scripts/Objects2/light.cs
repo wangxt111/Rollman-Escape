@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+//已废弃
 public class Light : MonoBehaviour
 {
     public GameObject flashlight;

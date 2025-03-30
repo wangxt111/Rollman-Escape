@@ -8,8 +8,10 @@ using UnityEngine;
 public class Water_level2 : MonoBehaviour
 {
     public Sprite[] anime;
+    public Sprite[] darkwater;
     public float speed = 1f;
     public GameObject[] objectdownwithwater;
+    public GameObject flashlight;
     void Start()
     {
         WaterAppear();
@@ -37,17 +39,21 @@ public class Water_level2 : MonoBehaviour
         }
     }
     public void WaterAppear(){
-        StartCoroutine(WaitAndSwitchSpritesSequentially(anime));
+        StartCoroutine(WaitAndSwitchSpritesSequentially(anime,darkwater));
 
     }
-    public IEnumerator WaitAndSwitchSpritesSequentially(Sprite[] sprites)
+    public IEnumerator WaitAndSwitchSpritesSequentially(Sprite[] sprites, Sprite[] other)
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         GetComponent<Renderer>().enabled = true;
         while (true){
-            foreach (Sprite spr in sprites)
+            for(int i = 0; i < sprites.Length; i++)
             {
-                spriteRenderer.sprite = spr;
+                if(info.getflashlight){
+                    spriteRenderer.sprite = sprites[i];
+                }else{
+                    spriteRenderer.sprite = other[i];
+                }
                 yield return new WaitForSeconds(0.167f);
             }
         }

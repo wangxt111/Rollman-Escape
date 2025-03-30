@@ -49,4 +49,5 @@ public static class info{
         new List<int> {9}
     };
     public static bool waterlevel2 = true;
+    public static bool getflashlight = false;
 }
