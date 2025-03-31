@@ -7007,12 +7007,12 @@ Transform:
   - {fileID: 2106800825}
   - {fileID: 394895502}
   - {fileID: 92243634}
-  - {fileID: 84763548}
   - {fileID: 1354388740}
   - {fileID: 489589056}
   - {fileID: 987756828}
   - {fileID: 171103513}
   - {fileID: 593271194}
+  - {fileID: 84763548}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &679813747
@@ -14701,7 +14701,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 200, z: 10}
-  m_LocalScale: {x: 0.68, y: 0.68, z: 0.68}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2020985486}

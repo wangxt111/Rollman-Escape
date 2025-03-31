@@ -8,6 +8,23 @@ public class Flashlight : MonoBehaviour
     public Sprite image;
     void Start()
     {
+        Transform parent = transform.parent;
+        if (parent == null)
+        {
+            return;
+        }
+
+        foreach (Transform sibling in parent)
+        {
+            if (sibling != transform)
+            {
+                Collider collider = sibling.GetComponent<Collider>();
+                if (collider != null)
+                {
+                    collider.enabled = false;
+                }
+            }
+        }
         return;
     }
     void Update()
@@ -38,6 +55,23 @@ public class Flashlight : MonoBehaviour
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
                     this.gameObject.SetActive(false);
                     info.getflashlight = true;
+                    Transform parent = transform.parent;
+                    if (parent == null)
+                    {
+                        return;
+                    }
+
+                    foreach (Transform sibling in parent)
+                    {
+                        if (sibling != transform)
+                        {
+                            Collider collider = sibling.GetComponent<Collider>();
+                            if (collider != null)
+                            {
+                                collider.enabled = true;
+                            }
+                        }
+                    }
                 }
             }
         }

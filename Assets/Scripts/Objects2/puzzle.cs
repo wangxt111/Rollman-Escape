@@ -38,7 +38,7 @@ public class Puzzle : MonoBehaviour
             {
                 if(!info.in_childscene)
                 {
-                    info.input_box = false;
+                    info.puzzle_enlarge = true;
                     info.waterlevel2 = false;
                     Utils.MoveCamera(CameraPositionAfterClick,false);
                 }

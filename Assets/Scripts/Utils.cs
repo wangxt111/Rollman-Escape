@@ -21,8 +21,8 @@ public static class Utils{
         info.in_childscene = false;
         if( info.level == 2 )
         {
-            info.input_box = true;
             info.waterlevel2 = true;
+            info.puzzle_enlarge = false;
         }
     }
     public static void ClearTableButton(int index){ //从tablebutton上移除物体，同时清空info中信息
