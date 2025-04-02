@@ -9,6 +9,7 @@ public class Addmission : MonoBehaviour
     public GameObject window;
     public GameObject water;
     public GameObject bird;
+    public GameObject Scene2;
     void Start()
     {
         return;
@@ -41,6 +42,7 @@ public class Addmission : MonoBehaviour
                 camera.GetComponent<Camera>().orthographic = true;
                 water.GetComponent<Water>().WaterAppear();
                 info.switchingtolevel2 = true;
+                DisableAllChildBoxColliders(Scene2);
                 window.GetComponent<Window>().WindowClose();
                 piano.GetComponent<Piano_perspective>().PianoClose();
                 StartCoroutine(MoveCameraAfterDelay());
@@ -57,5 +59,25 @@ public class Addmission : MonoBehaviour
         info.switchingtolevel2 = false;
         info.timerIsRunning = true;
         info.level = 2;
+    }
+
+    public void DisableAllChildBoxColliders(GameObject targetObject)
+    {
+        // 检查目标物体是否为空
+        if (targetObject != null)
+        {
+            // 遍历目标物体的所有子物体
+            foreach (Transform child in targetObject.transform)
+            {
+                // 获取子物体的 BoxCollider 组件
+                BoxCollider boxCollider = child.GetComponent<BoxCollider>();
+                // 检查子物体是否有 BoxCollider 组件
+                if (boxCollider != null)
+                {
+                    // 禁用 BoxCollider 组件
+                    boxCollider.enabled = false;
+                }
+            }
+        }
     }
 }

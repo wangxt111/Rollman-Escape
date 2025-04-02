@@ -11,7 +11,7 @@ public class Piece : MonoBehaviour
     Renderer objectrenderer;
     void Start()
     {
-        CameraPositionAfterClick = new Vector3(targetpiece.transform.position.x, targetpiece.transform.position.y, 0f);
+        if(targetpiece != null) CameraPositionAfterClick = new Vector3(targetpiece.transform.position.x, targetpiece.transform.position.y, 0f);
         objectrenderer = GetComponent<Renderer>();
         return;
     }

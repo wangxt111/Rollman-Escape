@@ -12,6 +12,7 @@ public class CameraRoomController : MonoBehaviour
         if(info.debuglevel == 2){
             transform.SetPositionAndRotation(new Vector3(0f,64f,0f), Quaternion.Euler(0f, -90f, 0f));
         }else if(info.debuglevel == 3){
+            info.level = 3;
             transform.position = Constants.Constants.level_3_camera;
         }
 

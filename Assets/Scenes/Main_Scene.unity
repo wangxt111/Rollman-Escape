@@ -18535,6 +18535,7 @@ MonoBehaviour:
   window: {fileID: 608188419}
   water: {fileID: 1990453015}
   bird: {fileID: 1539760577}
+  Scene2: {fileID: 283637074}
 --- !u!1 &1742732693
 GameObject:
   m_ObjectHideFlags: 0
