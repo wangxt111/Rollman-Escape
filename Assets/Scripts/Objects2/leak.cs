@@ -46,6 +46,7 @@ public class Leak : MonoBehaviour
             {
                 if(water.transform.localPosition.y < -8.5f){
                     GameObject camera = GameObject.Find("Main Camera");
+                    info.level = 3;
                     camera.transform.position = Constants.Constants.level_3_camera;
                 }
                 if(targetobject.Contains(info.currentobject)){

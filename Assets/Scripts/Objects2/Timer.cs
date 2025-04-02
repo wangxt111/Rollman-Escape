@@ -9,6 +9,12 @@ public class CountdownTimer : MonoBehaviour
     }
     void Update()
     {
+        if (info.level == 3)
+        {
+            countdownText.gameObject.SetActive(false);
+            this.enabled = false;
+            return;
+        }
         if (info.timerIsRunning)
         {
             if (info.timeRemaining > 0)
@@ -31,10 +37,6 @@ public class CountdownTimer : MonoBehaviour
                     #if UNITY_EDITOR
                     UnityEditor.EditorApplication.isPlaying = false;  // 在编辑器中停止运行
                     #endif
-                }
-                else
-                {
-                    this.enabled = false;  // 停止倒计时组件
                 }
             }
         }
