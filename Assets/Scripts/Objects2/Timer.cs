@@ -7,7 +7,6 @@ public class CountdownTimer : MonoBehaviour
     void Start()
     {
     }
-
     void Update()
     {
         if (info.timerIsRunning)
@@ -25,8 +24,18 @@ public class CountdownTimer : MonoBehaviour
             {
                 info.timeRemaining = 0;
                 info.timerIsRunning = false;
-                // 倒计时结束后触发的事件
-                Debug.Log("倒计时结束！");
+
+                if (info.level == 2)
+                {
+                    Application.Quit();  // 退出游戏
+                    #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;  // 在编辑器中停止运行
+                    #endif
+                }
+                else
+                {
+                    this.enabled = false;  // 停止倒计时组件
+                }
             }
         }
     }

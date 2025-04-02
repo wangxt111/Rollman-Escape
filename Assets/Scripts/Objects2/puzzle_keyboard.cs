@@ -36,7 +36,7 @@ public class Puzzle_Keyboard : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 ) || ( info.level == 2 && info.safe_box2 != 2 ) ) )
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject )
             {
                 info.puzzle_num = num;
                 Utils.MoveCamera(CameraPositionAfterClick,true,info.puzzle_enlarge);
