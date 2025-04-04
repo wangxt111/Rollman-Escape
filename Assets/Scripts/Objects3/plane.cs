@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class Plane : MonoBehaviour
 {
-    public Sprite image;
     void Start()
     {
         return;
     }
     void Update()
     {
+        if (info.piece7_key && info.piece7_plane)
+        {
+            info.piece[7] = true;
+            Utils.ResetCamera();
+            this.gameObject.SetActive(false);
+        }
         Collider Collider = GetComponent<Collider>();
         Collider.enabled = info.drawer[0];
         // 检测鼠标左键是否被按下
@@ -33,13 +38,11 @@ public class Plane : MonoBehaviour
             // 如果射线击中了当前物体
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                GameObject freebutton = GameObject.Find("MainController").GetComponent<buttonmanager>().getfirstfreebutton();
-                if (freebutton != null)
-                {
-                    freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
-                    freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
-                    this.gameObject.SetActive(false);
-                }
+                Renderer Renderer = GetComponent<Renderer>();
+                Renderer.enabled = false;
+                Collider Collider = GetComponent<Collider>();
+                Collider.enabled = false;
+                info.piece7_plane = true;
             }
         }
     }

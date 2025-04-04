@@ -1,9 +1,8 @@
 using UnityEngine;
 
-public class Drawer : MonoBehaviour
+public class Drawer_Useless : MonoBehaviour
 {
-    public int drawerID;
-    public Vector3 targetPosition1 = new Vector3(1.07f, 0.3f, 0);
+    public Vector3 targetPosition1 = new Vector3(0.53f, 0f, 0f);
     public Vector3 targetPosition2 = new Vector3(0f, 0f, 0f);
     private Vector3 targetPosition;
     private float moveSpeed = 4f;
@@ -16,14 +15,6 @@ public class Drawer : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.localPosition, targetPosition1) < 0.01f)
-        {
-            info.drawer[drawerID] = false;
-        }
-        else
-        {
-            info.drawer[drawerID] = true;
-        }
         if (!isSwitching && Input.GetMouseButtonDown(0))
         {
             HandleMouseClick();

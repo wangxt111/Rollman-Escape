@@ -27,7 +27,8 @@ public class MyWork : MonoBehaviour
                         // 如果射线击中了当前物体
                         if (hit.collider != null && hit.collider.gameObject == this.gameObject)
                         {
-                            targetpiece.GetComponent<Piece>().Activate();
+                            info.piece[1] = true;
+                            Utils.ResetCamera();
                         }
                     }
                     boxCollider.enabled = false;

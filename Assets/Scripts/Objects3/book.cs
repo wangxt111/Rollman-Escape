@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class Drawer : MonoBehaviour
+public class Book : MonoBehaviour
 {
-    public int drawerID;
-    public Vector3 targetPosition1 = new Vector3(1.07f, 0.3f, 0);
+    public Vector3 targetPosition1 = new Vector3(0.32f, 0f, 0f);
     public Vector3 targetPosition2 = new Vector3(0f, 0f, 0f);
     private Vector3 targetPosition;
-    private float moveSpeed = 4f;
+    private float moveSpeed = 6f;
     private bool isSwitching = false;
 
     private void Start()
@@ -16,14 +15,6 @@ public class Drawer : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.localPosition, targetPosition1) < 0.01f)
-        {
-            info.drawer[drawerID] = false;
-        }
-        else
-        {
-            info.drawer[drawerID] = true;
-        }
         if (!isSwitching && Input.GetMouseButtonDown(0))
         {
             HandleMouseClick();
@@ -71,6 +62,14 @@ public class Drawer : MonoBehaviour
         if (Vector3.Distance(transform.localPosition, targetPosition) < 0.01f)
         {
             isSwitching = false;
+            if ( targetPosition == targetPosition1 )
+            {
+                -- info.book_num;
+            }
+            else
+            {
+                ++ info.book_num;
+            }
         }
     }
 }

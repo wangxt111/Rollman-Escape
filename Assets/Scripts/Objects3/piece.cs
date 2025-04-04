@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
+    public int pieceID;
     public GameObject targetpiece;
     public Sprite newSprite;
     Vector3 CameraPositionAfterClick;
@@ -17,6 +18,11 @@ public class Piece : MonoBehaviour
     }
     void Update()
     {
+        if (info.piece[pieceID] == true)
+        {
+            GetComponent<SpriteRenderer>().sprite = newSprite;
+            return;
+        }
         // 检测鼠标左键是否被按下
         if (Input.GetMouseButtonDown(0))
         {
@@ -39,9 +45,5 @@ public class Piece : MonoBehaviour
                 Utils.MoveCamera(CameraPositionAfterClick);
             }
         }
-    }
-
-    public void Activate(){
-        GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 }

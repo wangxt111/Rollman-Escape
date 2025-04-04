@@ -55,5 +55,11 @@ public static class info{
     public static bool getflashlight = false; //level2中是否获得手电筒
 
     // 场景3
+    public static bool[] piece = new bool[9]; // 为true表示改碎片对应关卡通关，切换碎片sprite
     public static bool[] drawer = new bool[2];
+    public static int card = 0;
+    public static int candy = 0;
+    public static int book_num = 0;
+    public static bool piece7_key = false;
+    public static bool piece7_plane = false;
 }

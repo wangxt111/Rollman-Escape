@@ -38,6 +38,7 @@ public class Key : MonoBehaviour
                 {
                     freebutton.GetComponent<tablebutton>().changeimage(freebutton, image);
                     freebutton.GetComponent<tablebutton>().changestore(freebutton, this.gameObject);
+                    info.piece7_key = true;
                     this.gameObject.SetActive(false);
                 }
             }
