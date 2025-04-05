@@ -21,7 +21,6 @@ public class Piece : MonoBehaviour
         if (info.piece[pieceID] == true)
         {
             GetComponent<SpriteRenderer>().sprite = newSprite;
-            return;
         }
         // 检测鼠标左键是否被按下
         if (Input.GetMouseButtonDown(0))
