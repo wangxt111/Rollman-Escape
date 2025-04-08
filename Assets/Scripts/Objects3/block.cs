@@ -4,10 +4,11 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     public Sprite[] sprites;
-    private int currentSpriteIndex = 0;
+    private int currentSpriteIndex;
     private SpriteRenderer spriteRenderer;
 
     void Start(){
+        currentSpriteIndex = Random.Range(0, sprites.Length);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprites[currentSpriteIndex];
     }
