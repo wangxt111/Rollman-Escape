@@ -36,6 +36,8 @@ public class BlockController : MonoBehaviour
                 Blocks[i].transform.position = TrueGrids[i].transform.position;
             }
         }
+        int emptyindex = UnityEngine.Random.Range(0, 9);
+        ChangeEmpty(emptyindex);
         return;
     }
 
@@ -56,12 +58,12 @@ public class BlockController : MonoBehaviour
         }
     }
 
-    public void Choose(int index){ //选中第index格
+    public void Choose(int index, bool immediate = false){ //选中第index格
         if(checkedgrid<0 && emptyIndex!=index){
             checkedgrid = index;
         }else if(emptyIndex==index){
             if(IsAdjacent(checkedgrid, index)){
-                Move(checkedgrid, index);
+                Move(checkedgrid, index, immediate);
                 grid[index] = grid[checkedgrid];
                 emptyIndex = checkedgrid;
                 Blocks[index] = Blocks[checkedgrid];
@@ -84,7 +86,10 @@ public class BlockController : MonoBehaviour
         return (Mathf.Abs(rowA - rowB) + Mathf.Abs(colA - colB)) == 1;
     }
 
-    public void Move(int index, int targetindex){
+    public void Move(int index, int targetindex, bool immediate = false){
+        if(immediate){
+            Blocks[index].transform.position = TrueGrids[targetindex].transform.position;
+        }
         StartCoroutine(MoveTo(index, targetindex));
     }
     private IEnumerator MoveTo(int index, int targetindex){
@@ -148,5 +153,63 @@ public class BlockController : MonoBehaviour
         }
 
         return inversions;
+    }
+
+    void ChangeEmpty(int index){
+        switch (index){
+            case 0:
+                SimulateMove(5,8);
+                SimulateMove(2,5);
+                SimulateMove(1,2);
+                SimulateMove(0,1);
+                emptyIndex = 0;
+                break;
+            case 1:
+                SimulateMove(5,8);
+                SimulateMove(2,5);
+                SimulateMove(1,2);
+                emptyIndex = 1;
+                break;
+            case 2:
+                SimulateMove(5,8);
+                SimulateMove(2,5);
+                emptyIndex = 2;
+                break;
+            case 3:
+                SimulateMove(5,8);
+                SimulateMove(4,5);
+                SimulateMove(3,4);
+                emptyIndex = 3;
+                break;
+            case 4:
+                SimulateMove(5,8);
+                SimulateMove(4,5);
+                emptyIndex = 4;
+                break;
+            case 5:
+                SimulateMove(5,8);
+                emptyIndex = 5;
+                break;
+            case 6:
+                SimulateMove(7,8);
+                SimulateMove(6,7);
+                emptyIndex = 6;
+                break;
+            case 7:
+                SimulateMove(7,8);
+                emptyIndex = 7;
+                break;
+            case 8:
+                emptyIndex = 8;
+                break;
+            default:
+                Debug.LogError("Invalid index: " + index);
+                break;
+        }
+    }
+
+    void SimulateMove(int a,int b){
+        Choose(a,true);
+        Choose(b,true);
     }
 }
