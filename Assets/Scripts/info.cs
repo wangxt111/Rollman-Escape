@@ -35,7 +35,7 @@ public static class info{
     public static int horizontal_bar = 0; //0、1、2、3分别表示没上杆、上杆、做第一个引体向上、做第二个引体向上
     public static bool carpethidekeyboard = true; //地毯是否隐藏键盘
     public static int manual_object_num = 0;
-    public static int debuglevel = 3; //为true时直接到录取通知书（通过camera.cs）
+    public static int debuglevel = 4; //为true时直接到录取通知书（通过camera.cs）
     public static bool switchingtolevel2 = false; //是否正在切换到level2
     public static float waterhight = 0f; //水的高度
 
@@ -63,4 +63,6 @@ public static class info{
     public static int book_num = 0;
     public static bool piece7_key = false;
     public static bool piece7_plane = false;
+
+    public static bool MovingBlock = false;
 }
