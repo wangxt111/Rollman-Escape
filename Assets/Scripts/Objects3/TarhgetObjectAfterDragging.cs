@@ -29,6 +29,7 @@ public class TarhgetObjectAfterDragging : MonoBehaviour
                         if (hit.collider != null && hit.collider.gameObject == this.gameObject)
                         {
                             info.piece[targetpiece] = true;
+                            ++ info.finish_piece_num;
                             this.gameObject.SetActive(false);
                             Utils.ResetCamera();
                         }

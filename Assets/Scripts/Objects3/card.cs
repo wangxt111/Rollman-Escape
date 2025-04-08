@@ -57,6 +57,7 @@ public class Card : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 info.piece[3] = true;
+                ++ info.finish_piece_num;
                 Utils.ResetCamera();
                 this.gameObject.SetActive(false);
             }

@@ -61,6 +61,7 @@ public class Candy : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
                 info.piece[4] = true;
+                ++ info.finish_piece_num;
                 Utils.ResetCamera();
                 this.gameObject.SetActive(false);
             }

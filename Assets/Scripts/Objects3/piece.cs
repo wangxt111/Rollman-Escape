@@ -18,6 +18,10 @@ public class Piece : MonoBehaviour
     }
     void Update()
     {
+        if( info.finish_piece_num == 8 )
+        {
+            StartCoroutine(Wait());
+        }
         if (info.piece[pieceID] == true)
         {
             GetComponent<SpriteRenderer>().sprite = newSprite;
@@ -45,5 +49,11 @@ public class Piece : MonoBehaviour
                 Utils.MoveCamera(CameraPositionAfterClick);
             }
         }
+    }
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1.0f);
+        info.level = 4;
+        Camera.main.transform.position = Constants.Constants.level_4_camera;
     }
 }

@@ -14,6 +14,7 @@ public class Plane : MonoBehaviour
         if (info.piece7_key && info.piece7_plane)
         {
             info.piece[7] = true;
+            ++ info.finish_piece_num;
             Utils.ResetCamera();
             this.gameObject.SetActive(false);
         }
