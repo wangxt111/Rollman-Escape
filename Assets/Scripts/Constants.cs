@@ -11,6 +11,7 @@ namespace Constants
         public static readonly Vector3Int level_2_camera = new Vector3Int(0, 100, 0);
         public static readonly Quaternion level_2_camera_rotation = Quaternion.Euler(0f, 0f, 0f);
         public static readonly Vector3Int level_3_camera = new Vector3Int(0, 200, 0);
+        public static readonly Vector3Int level_4_camera = new Vector3Int(0, 300, 0);
         public const int buttonnumber = 20;
         public static readonly Color red = new Color32(209, 124, 65, 255);
         public static readonly Color green = new Color32(157, 173, 71, 255);

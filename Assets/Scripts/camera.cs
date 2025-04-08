@@ -14,6 +14,9 @@ public class CameraRoomController : MonoBehaviour
         }else if(info.debuglevel == 3){
             info.level = 3;
             transform.position = Constants.Constants.level_3_camera;
+        }else if(info.debuglevel == 4){
+            info.level = 4;
+            transform.position = Constants.Constants.level_4_camera;
         }
 
     }
