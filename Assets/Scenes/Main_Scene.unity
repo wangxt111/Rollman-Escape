@@ -10994,6 +10994,7 @@ GameObject:
   - component: {fileID: 679813746}
   - component: {fileID: 679813745}
   - component: {fileID: 679813747}
+  - component: {fileID: 679813748}
   m_Layer: 0
   m_Name: "\u7B2C\u4E8C\u5173 \u4E0D\u53EF\u4EA4\u4E92\u7269\u54C1"
   m_TagString: Untagged
@@ -11118,6 +11119,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 20.699955, y: 14, z: 0}
   m_Center: {x: -1.3359946, y: 0, z: 1}
+--- !u!114 &679813748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679813744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1d97b72349bfe4c96e02a3dbe4fd11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 84763552}
+  textFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
 --- !u!1 &681841381
 GameObject:
   m_ObjectHideFlags: 0

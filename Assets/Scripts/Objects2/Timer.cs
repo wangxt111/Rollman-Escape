@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -33,13 +34,24 @@ public class CountdownTimer : MonoBehaviour
 
                 if (info.level == 2)
                 {
-                    Application.Quit();  // 退出游戏
-                    #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.isPlaying = false;  // 在编辑器中停止运行
-                    #endif
+                    StartCoroutine(Die());
                 }
             }
         }
+    }
+
+    IEnumerator Die()
+    {
+        Dead.UpdateText("You died because of time out!");
+        // 等待指定的秒数
+        yield return new WaitForSeconds(3f);
+
+        Dead.UpdateText("");
+        
+        Application.Quit();  // 退出游戏
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;  // 在编辑器中停止运行
+        #endif
     }
 
     void UpdateTimerDisplay(float time)
