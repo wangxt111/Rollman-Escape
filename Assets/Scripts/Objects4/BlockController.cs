@@ -113,10 +113,19 @@ public class BlockController : MonoBehaviour
 
     bool Checkwin(){
         if(emptyIndex != targetemptyindex) return false;
+        int spriteindex = -1;
         for(int i = 0; i < 9; ++i){
             if(i==targetemptyindex) continue;
-            if(grid[i] != i) return false;
+            if(spriteindex<0){
+                spriteindex = Blocks[i].GetComponent<Block>().GetSpriteIndex();
+                if(grid[i] != i){
+                    return false;
+                }
+            }else if(grid[i] != i || Blocks[i].GetComponent<Block>().GetSpriteIndex() != spriteindex){
+                return false;
+            }
         }
+        info.block_type = spriteindex;
         return true;
     }
 

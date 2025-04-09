@@ -67,5 +67,5 @@ public static class info{
     // 第四关
     public static bool MovingBlock = false;
     public static bool finish_level4 = false;
-    public static int block_type = 0;
+    public static int block_type = -1;
 }
