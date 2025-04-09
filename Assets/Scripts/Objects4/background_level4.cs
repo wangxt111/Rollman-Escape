@@ -29,7 +29,6 @@ public class Background_Level4 : MonoBehaviour
         // 相机初始和目标位置
         camTransform = Camera.main.transform;
         initialCameraPosition = Constants.Constants.level_4_camera;
-        camTransform.position = initialCameraPosition;
         targetCameraPosition = initialCameraPosition + new Vector3(0f, 2.81f, 0f);
 
         // 初始和目标缩放
