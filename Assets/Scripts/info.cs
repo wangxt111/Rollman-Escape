@@ -63,6 +63,9 @@ public static class info{
     public static int book_num = 0;
     public static bool piece7_key = false;
     public static bool piece7_plane = false;
-
+    
+    // 第四关
     public static bool MovingBlock = false;
+    public static bool finish_level4 = false;
+    public static int block_type = 0;
 }

@@ -54,6 +54,8 @@ public class BlockController : MonoBehaviour
         }
 
         if(Checkwin()){
+            // 补上最后一块图片
+            info.finish_level4 = true;
             Debug.Log("win!!!!!!!!!!!!!!");
         }
     }
