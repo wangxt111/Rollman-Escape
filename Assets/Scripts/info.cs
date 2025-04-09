@@ -65,4 +65,5 @@ public static class info{
     public static bool piece7_plane = false;
 
     public static bool MovingBlock = false;
+    public static int block_type = -1;
 }

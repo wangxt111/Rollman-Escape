@@ -21,4 +21,8 @@ public class Block : MonoBehaviour
         currentSpriteIndex = (currentSpriteIndex + 1) % sprites.Length;
         spriteRenderer.sprite = sprites[currentSpriteIndex];
     }
+
+    public int GetSpriteIndex(){
+        return currentSpriteIndex;
+    }
 }
