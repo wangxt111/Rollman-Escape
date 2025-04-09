@@ -55,5 +55,6 @@ public class Piece : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         info.level = 4;
         Camera.main.transform.position = Constants.Constants.level_4_camera;
+        this.gameObject.SetActive(false);
     }
 }

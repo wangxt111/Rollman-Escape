@@ -23,7 +23,8 @@ public class CameraRoomController : MonoBehaviour
 
     void Update()
     {
-        if(info.switchingtolevel2) return;
+        if( info.switchingtolevel2 ) return;
+        if( info.level >= 1 && info.in_childscene == false ) return;
         if( Input.GetKeyDown(KeyCode.UpArrow) && info.current_scene_num != 5 && !info.in_childscene )
         {
             scene_before_up = info.current_scene_num ;
