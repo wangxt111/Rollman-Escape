@@ -4,7 +4,7 @@ public class Background_Level4 : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;       // 拖 SpriteRenderer
     public float fadeSpeed = 0.6f;                // 透明度上升速度
-    public float cameraMoveSpeed = 1.5f;          // 相机移动速度
+    public float cameraMoveSpeed = 2.0f;          // 相机移动速度
     public float scaleSpeed = 0.6f;               // 缩放速度
 
     private bool startAnimation = false;
@@ -31,16 +31,16 @@ public class Background_Level4 : MonoBehaviour
         // 相机目标位置
         camTransform = Camera.main.transform;
         initialCameraPosition = Constants.Constants.level_4_camera;
-        targetCameraPosition = initialCameraPosition + new Vector3(0f, 1.81f, 0f);
+        targetCameraPosition = initialCameraPosition + new Vector3(0f, 2.81f, 0f);
 
         // 初始和目标缩放
         originalScale = transform.localScale;
-        targetScale = originalScale * 0.8f;
+        targetScale = new Vector3(0.75f,0.75f,0.75f);
     }
 
     void Update()
     {
-        if (info.finish_level4 && !startAnimation)
+        if (info.finish_level4 && !startAnimation && !info.MovingBlock)
         {
             startAnimation = true;
         }
