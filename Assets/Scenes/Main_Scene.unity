@@ -18076,6 +18076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12cc0e5d944e3564590d798ca430457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  safeboxID: 2
   CameraPositionAfterClick: {x: 0, y: 132, z: 0}
   safebox_open: {fileID: 21300000, guid: 111910581adf7954cb68d898ff089943, type: 3}
 --- !u!65 &1034984890
@@ -26120,6 +26121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12cc0e5d944e3564590d798ca430457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  safeboxID: 1
   CameraPositionAfterClick: {x: 0, y: 32, z: 0}
   safebox_open: {fileID: 21300000, guid: e3ac653cfceb8dc4aa3e8c6e4f703d51, type: 3}
 --- !u!65 &1500936613
@@ -27521,9 +27523,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1559916209}
-  fadeSpeed: 1
-  cameraMoveSpeed: 1
-  scaleSpeed: 1
+  fadeDuration: 2
+  cameraMoveDuration: 2
+  scaleDuration: 2
 --- !u!1 &1560750890
 GameObject:
   m_ObjectHideFlags: 0
@@ -32188,8 +32190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -294, y: 187}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -764, y: 433}
+  m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941597957
 MonoBehaviour:
@@ -32238,8 +32240,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

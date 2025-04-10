@@ -5,6 +5,7 @@ using UnityEngine;
 // 切换到放大的保险箱场景
 public class Safebox_perspective_close : MonoBehaviour
 {
+    public int safeboxID;
     public Vector3 CameraPositionAfterClick = new Vector3(0, 32, 0);
     public Sprite safebox_open;
     private Renderer[] childRenderers;
@@ -31,7 +32,7 @@ public class Safebox_perspective_close : MonoBehaviour
     }
     void Update()
     {
-        if( ( info.level == 1 && info.safe_box1 == 2 ) || ( info.level == 2 && info.safe_box2 == 2 ) )
+        if( ( info.level == 1 && info.safe_box1 == 2 && safeboxID == 1 ) || ( info.level == 2 && info.safe_box2 == 2 && safeboxID == 2 ) )
         {
             Collider collider = GetComponent<Collider>();
             collider.enabled = false;
@@ -68,7 +69,7 @@ public class Safebox_perspective_close : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             // 如果射线击中了当前物体
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 ) || ( info.level == 2 && info.safe_box2 != 2 ) ) )
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject && ( ( info.level == 1 && info.safe_box1 != 2 && safeboxID == 1 ) || ( info.level == 2 && info.safe_box2 != 2 && safeboxID == 2 ) ) )
             {
                 Utils.MoveCamera(CameraPositionAfterClick,true);
             }
